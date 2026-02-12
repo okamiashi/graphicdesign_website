@@ -1,0 +1,590 @@
+/* --------------------------
+    WEBSITE MENU DATA
+    -------------------------- */
+
+// Metadata
+const lastUpdated = 'February 11th, 2026';
+const version = '0.4.15-CH.0.2';
+
+// menu logo redirection
+menuLogoRedirect = 'info:artifyber';
+
+// Orbit data
+orbitData = [
+    {
+        orbit: 1,
+        title: "Autobiography",
+        desc: "Everything about me. That's it.",
+    },
+    {
+        orbit: 3,
+        title: "Graphic design",
+        desc: "All my graphic design projects, sorted into separate categories.",
+    },
+    {
+        orbit: 4,
+        title: "Others",
+        desc: "Site credits, links, and some other stuffs.",
+    },
+    {
+        orbit: 127, // Secret! Dunno what it does
+        scaleX: 1,
+        scaleY: 1,
+    },
+];
+
+// Main menu data array
+let menuItems = [
+    /* --------------------------
+    Menu Template
+    -------------------------- */
+    {
+        menuId: 'menuTemplate',               // REQUIRED: Unique identifier (alphanumeric, no spaces)
+        title: 'Menu Template Example',        // Menu name and title
+        showTitle: false,                      // Show name in orbit
+        subtitle: 'This is a menu example',   // Short description
+        image: 'images/temp2.png',            // Orbit thumbnail image
+        color: 'var(--color-15)',             // Menu color (hex, CSS var, or blank)
+        orbit: 0,                             // INTEGER: Orbit layer placement
+        scale: 1,                             // Menu size in orbit
+        hidden: true,                         // Hide from orbit (accessible via links only)
+        invisible: true,                      // Exclude from search
+        labels: [
+            // CARDS WITH THUMBNAILS
+            {
+                // Cards without cardId become separators
+                title: 'Card examples',
+                subtitle: 'Main card types to put your content in',
+            },
+            {
+                cardId: 'normalCard',         // REQUIRED: Unique card identifier
+                title: 'Normal Card',
+                subtitle: 'With thumbnail',
+                detail: 'This is a template for a normal card.<br>You can fill these with whatever you want in raw HTML.',
+                image: 'images/temp.png'        // Thumbnail will be shown in 1:1 aspect ratio
+            },
+            {
+                cardId: 'urlCard',
+                title: 'URL Card',
+                subtitle: 'With thumbnail',
+                url: 'https://x.com/artifyber',  // External URL redirect
+                image: 'images/temp.png'
+            },
+            {
+                cardId: 'unclickableCard',
+                title: 'Unclickable Card',
+                subtitle: 'With thumbnail',
+                unclickable: true,            // Non-clickable info card
+                image: 'images/temp.png'
+            },
+
+            // CARDS WITHOUT TEXT
+            {
+                cardId: 'normalCardBlank',
+                blank: true,    // set the card as blank / have no text
+                detail: 'This is a template for a normal card.<br>You can fill these with whatever you want in raw HTML.',
+                image: 'images/temp.png'        // Thumbnail will be shown in 4:5 aspect ratio
+            },
+            {
+                cardId: 'urlCardBlank',
+                blank: true,
+                url: 'https://x.com/artifyber',
+                image: 'images/temp.png'
+            },
+            {
+                cardId: 'unclickableCardBlank',
+                blank: true,
+                unclickable: true,
+                image: 'images/temp.png',
+            },
+
+            // CARDS WITHOUT THUMBNAILS
+            {
+                cardId: 'normalCardPlain',
+                title: 'Normal Card',
+                subtitle: 'Without thumbnail',
+                detail: 'This is a template for a normal card.<br>You can fill these with whatever you want in raw HTML.'
+            },
+            {
+                cardId: 'urlCardPlain',
+                title: 'URL Card',
+                subtitle: 'Without thumbnail',
+                url: 'https://x.com/artifyber'
+            },
+            {
+                cardId: 'unclickableCardPlain',
+                title: 'Unclickable Card',
+                subtitle: 'Without thumbnail',
+                unclickable: true
+            },
+
+            // BANNER CARDS
+            {
+                // Cards without cardId become separators
+                title: 'Banner examples',
+                subtitle: 'Useful for describing a section of card grid',
+            },
+            {
+                cardId: 'bannerCard',
+                title: 'Banner Card',
+                subtitle: 'A type of card that spans the entire width of the container',
+                detail: 'This is a template for a normal card.<br>You can fill these with whatever you want in raw HTML.',
+                banner: true,
+                image: 'images/temp3.png'
+            },
+            {
+                cardId: 'bannerUrlCard',
+                title: 'Banner Card (URL)',
+                subtitle: 'A type of card that spans the entire width of the container',
+                banner: true,
+                url: 'https://x.com/artifyber',
+                image: 'images/temp3.png'
+            },
+            {
+                cardId: 'bannerUnclickableCard',
+                title: 'Banner Card (Unclickable)',
+                subtitle: 'A type of card that spans the entire width of the container',
+                banner: true,
+                unclickable: true,
+                image: 'images/temp3.png'
+            },
+            {
+                cardId: 'bannerCardBlank',
+                title: 'Banner Card - No Thumbnail',
+                subtitle: 'A type of card that spans the entire width of the container',
+                detail: 'This is a template for a normal card.<br>You can fill these with whatever you want in raw HTML.',
+                banner: true,
+            },
+            {
+                cardId: 'bannerUrlCardBlank',
+                title: 'Banner Card - No Thumbnail (URL)',
+                subtitle: 'A type of card that spans the entire width of the container',
+                banner: true,
+                url: 'https://x.com/artifyber',
+            },
+            {
+                cardId: 'bannerUnclickableCardBlank',
+                title: 'Banner Card - No Thumbnail (Unclickable)',
+                subtitle: 'A type of card that spans the entire width of the container',
+                banner: true,
+                unclickable: true,
+            },
+
+            // MENU-LINKED CARDS
+            {
+                title: 'Menu-Link examples',
+                subtitle: 'Cards that open another menu',
+            },
+            {
+                linkId: 'deltadim'  // Links to menu with matching 'q' property
+            },
+            {
+                linkId: 'floriverse'
+            },
+            {
+                linkId: 'info'
+            },
+            {
+                linkId: 'deltadim',
+                banner: true
+            },
+            {
+                linkId: 'floriverse',
+                banner: true
+            },
+            {
+                linkId: 'info',
+                banner: true
+            },
+        ]
+    },
+
+    /* --------------------------
+    Actual Website Data
+    -------------------------- */
+
+
+    //First orbit (Autobiography)
+
+    {
+        // Autobiography
+        title: 'Autobiography',
+        menuId: 'autobio',
+        showTitle: true,
+        subtitle: 'All about me',
+        image: 'icons/l-carrd.png',
+        scale: 1,
+        color: 'var(--color-1)',
+        orbit: 1,
+        labels: [
+            {
+                cardId: 'description',
+                title: 'Description',
+                subtitle: 'Everything you <i>need</i> to know. Everything else is wants.',
+                banner: true,
+                detail: 
+                `<b>Hey! It's me!</b><br>
+                Your not-so-friendly nerdy student, who just wants to pass through this class without <i>too</i> much difficulty.<br>
+                <br>
+                If you put a computer in front of me, rest easy knowing that whatever this class has to offer me, it'll be easy. Kind of.<br>
+                Pretty much, all you need to know about me, is if I'm given an assignment, it will get done. By that, I mean disregarding whatever deadline you give me;
+                I'm horrible with deadlines. Just know it'll be done in at least a week after the deadline. If it's not, then I've forgotten about it and you either need
+                to remind me to do it, or it'll only get done when Powerschool is finalizing marks (which is basically just telling me to do it, since you tell us about the 
+                finalized marks).
+                `,
+
+                isCharacter: true,
+                cPronouns: 'he/him',
+                cGender: 'Male',
+                cSexuality: 'To you? Asexual.',
+                cNicknames: 'Sy, K, ConManJH9, etc',
+                cGallery: [
+                    'images/contrast_me.jpg',
+                    'images/sy.gif'
+                ]
+            },
+            {
+                cardId: 'hobbies',
+                title: 'Hobbies',
+                subtitle: 'Do I really need to explain it for you?',
+                banner: true,
+                detail:
+                `<b>My hobbies change <i>all the time,</i> so it's unlikely this list will stay for long.</b> <br>
+                <br>
+                My hobbies (as of February 11, 2026):<br>
+                <br>
+                    1. (obviously) Computer Science<br>
+                    2. This site template<br>
+                    3. Hamming codes<br>
+                    4. Ultrakill<br>
+                    5. i dunno<br>
+                <br>
+                An example of some of my code:<br>
+                <img src='images/coding.png' height=300px>
+                `
+            },
+            {
+                cardId: 'goals',
+                title: 'Goals',
+                subtitle: 'What I want to learn in Graphic Design',
+                banner: true,
+                detail:
+                `Anything computers. I'm interested in getting into Blender and stuff, and I can't really do that if I don't know how to design stuff.<br>
+                I also am horrible at drawing. My best drawings are done with a ruler; no creativity at all in that department. I'm hoping this class will
+                teach me some art skills.`
+            },
+            {
+                linkId: 'links',
+                banner: true
+            }
+        ]
+    },
+
+
+    // Orbit 4
+
+    {
+        // Links
+        title: 'Links',
+        menuId: 'links',
+        subtitle: 'All links to my social media',
+        showTitle: true,
+        image: 'icons/earth.png',
+        color: 'var(--color-9)',
+        orbit: 4,
+        scale: 1.5,
+        labels: [
+            {
+                cardId: 'discord',
+                title: 'Discord Server',
+                subtitle: '',
+                url: 'https://discord.gg/3vGSpJdVbk',
+                image: 'icons/l-discord.png'
+            },
+            {
+                cardId: 'youtube',
+                title: 'YouTube',
+                subtitle: '<i>N/A: account terminated</i>',
+                image: 'icons/l-youtube.png'
+            },
+            {
+                cardId: 'schoolemail',
+                title: 'Email (school acc.)',
+                subtitle: '',
+                url: 'mailto:connerh5034@gshare.blackgold.ca',
+                image: 'icons/email.png'
+            },
+            {
+                cardId: 'homeemail',
+                title: 'Email (home acc.)',
+                subtitle: '',
+                url: 'mailto:connerjh9@gmail.com',
+                image: 'icons/email.png'
+            }
+        ]
+    },
+
+    {
+        // Settings
+        menuId: 'settings',
+        title: 'Settings',
+        subtitle: 'Options to tweak',
+        showTitle: true,
+        color: 'var(--color-14)',
+        orbit: 4,
+        scale: 1.5,
+        hidden: true,
+        invisible: true,
+        labels: [
+            {
+                cardId: 'audioSettings',
+                title: `Audio`,
+                subtitle: `
+                        <button type="button" id="toggleSFX">SFX: Off</button>
+                        <button type="button" id="toggleMusic">Enable Music</button>
+                `,
+                unclickable: true,
+                detail:
+                    ``,
+                image: ''
+            },
+            {
+                cardId: 'modeSwitch',
+                title: `Layout`,
+                subtitle: `
+                        <button type="button" id="modeSwitch">Switch Layout</button>
+                `,
+                unclickable: true,
+                detail:
+                    ``,
+                image: ''
+            },
+            {
+                cardId: 'keybinds',
+                title: `Keyboard Shortcut`,
+                subtitle: `
+                        ESC = Go back<br>
+                        SPACE = Open search<br>
+                        C = Center view<br>
+                        H = Hide UIs<br>
+                `,
+                unclickable: true,
+                detail:
+                    ``,
+                image: ''
+            },
+            {
+                title: 'Developer Section',
+            },
+            {
+                cardId: 'webinfo',
+                title: `Website Info`,
+                subtitle: `Updated: ${lastUpdated}<br>
+                        Version: ${version}<br>
+                        <br>
+                        <div style='color: color-mix(in srgb, var(--accentl) 75%, transparent)' id="totalCardsCounter"></div>
+                        <div style='color: color-mix(in srgb, var(--accentl) 75%, transparent)' id="totalMenusCounter"></div>
+                        <div style='color: color-mix(in srgb, var(--accentl) 75%, transparent)' id="totalCharacterCounter"></div>
+                        <div style='color: color-mix(in srgb, var(--accentl) 75%, transparent)' id="totalSplashCounter"></div>
+                `,
+                banner: true,
+                unclickable: true,
+                detail:
+                    ``,
+                image: ''
+            },
+            {
+                cardId: 'credits',
+                title: `Credits`,
+                subtitle: `
+                        Developed by:<br>
+                        Artifyber<br>
+                        <br>
+                        Special thanks:<br>
+                        Azka "Artist" Zavian
+                `,
+                banner: true,
+                unclickable: true,
+                detail:
+                    ``,
+                image: ''
+            },
+            {
+                linkId: 'menuTemplate',
+                banner: true,
+            },
+            {
+                linkId: 'loopTest',
+                banner: true,
+            },
+            {
+                linkId: 'infiniteTest1',
+                banner: true,
+            }
+        ]
+    },
+
+    // Misc
+    {
+        menuId: 'loopTest',
+        title: 'loopTest',
+        color: 'var(--color-15)',
+        hidden: true,
+        invisible: true,
+        labels: [
+            {
+                cardId: 'testloop1',
+                title: 'testloop1',
+                subtitle: '',
+                detail:
+                    `<a data-open-card="loopTest:testloop2">testloop2</a>`,
+                image: 'images/temp2.png'
+            },
+            {
+                cardId: 'testloop2',
+                title: 'testloop2',
+                subtitle: '',
+                detail:
+                    `<a data-open-card="loopTest:testloop1">testloop1</a>`,
+                image: 'images/temp.png'
+            },
+        ]
+    },
+    {
+        menuId: 'infiniteTest1',
+        title: 'Softlock!!!',
+        color: 'var(--color-4)',
+        hidden: true,
+        invisible: true,
+        parent: 'infiniteTest2',
+        labels: [
+            {
+                cardId: 'urstucklol',
+                title: 'ur stuck lol',
+                subtitle: '',
+                detail: `lol`,
+            },
+            {
+                cardId: 'urstucklol2',
+                title: '<h1 style="font-size:100px">:3</h1>',
+                subtitle: '',
+                detail: `lol`,
+            },
+        ]
+    },
+    {
+        menuId: 'infiniteTest2',
+        title: 'Softlock!!!',
+        color: 'var(--color-4)',
+        hidden: true,
+        invisible: true,
+        parent: 'infiniteTest1',
+        labels: [
+            {
+                cardId: 'urstucklol',
+                title: '<h1 style="font-size:100px">:3</h1>',
+                subtitle: '',
+                detail: `lol`,
+            },
+            {
+                cardId: 'urstucklol2',
+                title: 'ur stuck lol',
+                subtitle: '',
+                detail: `lol`,
+            },
+        ]
+    },
+    {
+        title: 'Whitespace',
+        menuId: 'yolkspocketdimension',
+        subtitle: '',
+        image: '',
+        color: 'var(--color-10)',
+        orbit: 127,
+        scale: 0.5,
+        invisible: true,
+        labels: [
+            {
+                id: 1,
+                cardId: 'blank',
+                title: ' ',
+                subtitle: '',
+                detail:
+                    ``,
+                image: 'icons/whitespace.png'
+            },
+        ]
+    },
+];
+
+// Beecat
+if (Math.floor(Math.random() * 333) == 0) {
+    menuItems.forEach(menu => {
+        if (menu.name == "Information") {
+            menu.labels.unshift({
+                cardId: 'beecat',
+                title: 'Beecat',
+                subtitle: 'Beecat',
+                detail: `It's a bee!<br>It's a cat!<br>It's a beecat!<br>And it's spinning!<br>But why is it spinning?<br><br>
+                Character by <a href="https://x.com/ZestyLemonss" target="_blank">ZestyLemonss</a><br><br>
+                <img src="images/beecatspin.gif" data-caption="Beecat" data-subcaption="beecatspin.gif" style="width: 100%">`,
+                image: 'images/beecatspin.gif'
+            });
+        }
+    });
+}
+
+
+
+/*
+ * Generate placeholder cards for testing
+ * @param {number} n - Number of placeholder cards to generate
+ * @param {string} prefix - Prefix for card titles
+ * @returns {Array} Array of placeholder card objects
+ */
+function generateLabels(n, prefix) {
+    return Array.from({ length: n }).map((_, i) => ({
+        id: i + 1,
+        title: `${prefix} Item ${i + 1}`,
+        subtitle: `This is a short placeholder excerpt for ${prefix} item ${i + 1}.`,
+        detail: `Detailed description for ${prefix} item ${i + 1}. You can replace this with whatever content you want. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut nulla sed velit malesuada fermentum.`,
+        image: 'images/temp.png'
+    }));
+}
+
+// Special search responses
+specialSearch = {
+    nothing: {
+        title: 'Nothing found!',
+        subtitle: ''
+    },
+    something: {
+        title: 'Something found!',
+        subtitle: `...It's just me LOL<br>
+        My name is omniLens btw! You've probably met my brother omniTracer! He's such a powerful guy...<br>
+        Lowkey i'm kinda jealous of him. I wish to be as powerful as him one day :(`
+    },
+    content: {
+        title: 'Content found!',
+        subtitle: `Yup, i am the content. You've found me heehee!<br>
+        Aww you listened to what i said!<br>
+        Good boy :)`
+    },
+    help: {
+        title: 'help yourself bro LOLXD',
+        subtitle: ''
+    },
+    hi: {
+        title: 'HAII HIIII HELLLOOO!!!! :DD',
+        subtitle: ''
+    },
+};
+
+// Calculate totals for statistics
+totalCards = menuItems.reduce((sum, item) => sum + item.labels.length, 0);
+totalCharacters = menuItems.reduce((sum, item) => sum + item.labels.filter(label => label.isCharacter).length, 0);
+totalMenus = menuItems.length;
+
+if (typeof module !== "undefined") {
+    module.exports = { menuItems };
+}
