@@ -25,7 +25,7 @@ let SFX_MASTER_VOL = 0;
 let SIMPLE_MODE = getSimpleMode();
 // Simple mode index data
 const MAIN_MENU_TITLE = 'Main Menu';
-const MAIN_MENU_SUBTITLE = 'Welcome to the Fyberverse!';
+const MAIN_MENU_SUBTITLE = 'Welcome to whatever this thing is!';
 const SIMPLE_MODE_MENU_LOGO_SCALE = 1.5;
 
 const ORBIT_FPS = 20;
@@ -1138,7 +1138,7 @@ function focusCard(cardEl, label, menu = null) {
         const cPronouns = label.cPronouns ? `Pronouns: ${label.cPronouns}<br>` : '';
         const cGender = label.cGender ? `Gender: ${label.cGender}<br>` : '';
         const cSexuality = label.cSexuality ? `Sexuality: ${label.cSexuality}<br>` : '';
-        const cNicknames = label.cNicknames ? `Nickname: ${label.cNicknames}<br>` : '';
+        const cNicknames = label.cNicknames ? `Nickname(s): ${label.cNicknames}<br>` : '';
         const cReference = label.cReference ? `<br><h2>Reference Art:</h2><br><img class="lazy" data-src="${label.cReference}"><br><br>` : '';
         const cGallery = label.cGallery ? label.cGallery.length != 0 ? `<hr><h2>Gallery:</h2><div class="imgContainer">` + label.cGallery.map(imgSrc => `<img class="lazy" data-src="${imgSrc}">`).join('') + `</div><br>` : '' : '';
         const cAddOns = label.cAddOns ? `<br>${label.cAddOns}<br>` : '';

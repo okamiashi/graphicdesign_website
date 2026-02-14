@@ -3,7 +3,7 @@
     -------------------------- */
 
 // toggle sounds
-let sfxIsMute = true;
+let sfxIsMute = false;
 let bgmStop = false;
 function toggleSFXVol() {
     if (!sfxIsMute) {
