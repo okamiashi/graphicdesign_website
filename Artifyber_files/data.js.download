@@ -265,6 +265,7 @@ let menuItems = [
                 cGallery: [
                     'images/contrast_me.jpg',
                     'images/sy.gif',
+                    'images/copis.png',
                     'images/discpfp.png',
                     'images/calamusPurple.png'
                 ]
@@ -288,8 +289,7 @@ let menuItems = [
                 Here's some of my gameplay of Kerbal Space Program:<br>
                 <img src='images/solareclipse.png' height=300px>
                 And an example of some of my code:<br>
-                <img src='images/coding.png' height=300px>
-                `
+                <img src='images/coding.png' height=300px>`
             },
             {
                 cardId: 'goals',
@@ -358,12 +358,13 @@ let menuItems = [
     },
 
 
+
     // Orbit 2 (Graphic design)
 
-    //notes
+    
 
     {
-        
+        //notes
         title: 'Notes',
         menuId: 'notes',
         subtitle: 'Everything to know about graphic design',
@@ -388,6 +389,7 @@ let menuItems = [
     {
         //Principles of design
         title: 'Principles of design',
+        subtitle: '',
         menuId: 'principles',
         hidden: true,
         labels: [
@@ -395,8 +397,129 @@ let menuItems = [
                 cardId: 'balance',
                 title: 'Balance',
                 subtitle: `Everything has a 'weight' to it. Balance is 'balancing' that weight. I think.`,
-                detail:
-                ``
+                detail: 
+                    `<h3>Everything in design has a sort of 'weight' to it. A deep red is fairly 'heavy', but a light gray is, well, 'light'.</h3><br>
+                    Balancing these weights are fairly important to design. Sometimes it's okay to intentionally imbalance the weights if that's your style, but it's
+                    often best to just keep it balanced.<br>
+                    <br>
+                    <b>Example:</b><br>
+                    <img src='images/balance.png' height=400px><br>`
+            },
+            {
+                cardId: 'contrast',
+                title: 'Contrast',
+                subtitle: 'You should know what this means already',
+                detail: `<h3>Yep. It's contrast. One of the most well-known and easily understood elements of design there is.</h3><br>
+                Contrast is the difference in near elements. For example, the contrast between a person and the sky is big (skin and blue are very different colors),
+                but the contrast between a person and a wall (often similar colors) are small.<br><br>
+                Similar to balance, it's usually advised to keep contrast low. Though in some designs, contrast is important, like focusing on a target in an image,
+                having a design pop out more, etc.<br>
+                <br>
+                <b>Example:</b><br>
+                <img src='images/contrast.png' height=250px><br>
+                <b>An example of contrast when it gets too high:</b><br><br>
+                <img src='images/contrast_me.jpg' height=250px><br>`
+            },
+            {
+                cardId: 'emphasis',
+                title: 'Emphasis',
+                subtitle: 'When contrast is high intentionally',
+                detail: `<h3>When contrast is intentionally high to make a part of the image more visible or noticeable.</h3><br>
+                Emphasis is best used when you want something to stand out. Have a person you want to highlight? Put a dark background and shine a light on him.
+                Have an item you want to contrast? Make the surrounding elements as different as possible, but similar to each other.<br>
+                <br>
+                <b>Example:</b><br>
+                <img src='images/emphasis.jpg', height=350px><br>`
+            },
+            {
+                cardId: 'hierarchy',
+                title: 'Hierarchy',
+                subtitle: `Hey, I'm as confused as you on this one`,
+                detail: `<h3>From what I understand of hierarchy, it isnt as complicated as it sounds, it just has a strange name.</h3><br>
+                Hierarchy in design is how easily an image is processed. A super complicated image with about 7 different subjects is gonna be
+                pretty bad as a logo or something you want the viewer to see and then leave.<br>
+                <br>
+                The reason it's called "hierarchy" is because it's referring to how 'important' each subject in an image is. So kinda similar to contrast, but 
+                a little more important.<br>
+                <br>
+                It's best used when you have a specific item or subject in an image you want seen first, especially if there's a second you want them to see as well.<br>
+                <br>
+                <b>Example:</b><br>
+                <img src='images/hierarchy.png' height=325px>`
+            },
+            {
+                cardId: 'movement',
+                title: 'Movement',
+                subtitle: 'The flow of an image<br>(wait how can an image move)',
+                detail: `<h3>Movement refers to where the viewer's eye travels over a design.</h3><br>
+                If you have a <a data-open-card="principles:hierarchy">hierarchy</a> of subjects in an image, how are you going to control where a viewer's eyes are going to 
+                go first? Who's to say they won't look at the second one first? Or the third? Fifth?<br>
+                <br>
+                This is what movement is about. A design with good 'movement' should have a clear flow of where the subjects are and what to look at first, next, and last.<br>
+                <br>
+                <b>Example:</b><br>
+                <img src='images/movement.png' height=250px><br>`
+            },
+            {
+                cardId: 'pattern',
+                title: 'Pattern',
+                subtitle: 'Use your brain, you can figure it out. You can do it.',
+                detail: `<h3>Pattern is just that. A pattern.</h3><br>
+                It is literally just a repeated design in an image. That is all a pattern is.<br>
+                Seriously. I literally don't have anything more to write here. So example image it is.<br>
+                <br>
+                <b>Example:</b><br>
+                <img src='images/pattern.jpeg' height=350px><br>`
+            },
+            {
+                cardId: 'proportion',
+                title: 'Proportion',
+                subtitle: 'I aint even saying anything',
+                detail: `<h3>Proportion is literally just how big or small a thing is compared to another thing.<br>
+                That's it.</h3><br>
+                The larger, the easier it is to see. <a data-open-card='principles:contrast'>Contrasting</a> small things is the best way to
+                make the small things higher in the <a data-open-card='principles:hierarchy'>hierarchy</a>.<br>
+                <br>
+                <b>Example:</b><br>
+                <img src='images/proportion.png' height=350px>`
+            },
+            {
+                cardId: 'repetition',
+                title: 'Repetition',
+                subtitle: 'Similar to pattern, but a <i>little</i> bit different.',
+                detail: `<h3>Repeating an element in an image is a good way to make it very high in the <a data-open-card='principles:hierarchy'>hierarchy</a>.</h3><br>
+                Obviously, making a bunch of a thing makes it very easy to see that thing. Horrible when overdone, though; usually used to just 'spice' an image up.<br>
+                <br>
+                <b>Example:</b><br>
+                <img src='images/repetition.png' height=350px><br>`
+            },
+            {
+                cardId: 'rhythm',
+                title: 'Rhythm',
+                subtitle: 'Similar to pattern and repetition plus a bit of movement',
+                detail: `<h3>Rhythm is <i>how</i> the eyes move rather than where. How cleanly you look from one element to another.</h3><br>
+                A good example for this is music. Rhythm in design is the same as rhythm in music.<br>
+                <br>
+                <b>Example:</b><br>
+                <img src='images/rhythm.png' height=350px><br>`
+            },
+            {
+                cardId: 'unity',
+                title: 'Unity',
+                subtitle: 'One singular thing about an image turned up to the max',
+                detail: `<h2>UNDER CONSTRUCTION</h2>`
+            },
+            {
+                cardId: 'variety',
+                title: 'Variety',
+                subtitle: `It's... variety.`,
+                detail: `<h2>UNDER CONSTRUCTION</h2>`
+            },
+            {
+                cardId: 'space',
+                title: 'Space',
+                subtitle: 'SPAAAAAAAACE',
+                detail: `<h2>UNDER CONSTRUCTION</h2>`
             }
         ]
     },
@@ -405,14 +528,16 @@ let menuItems = [
         //Elements of design
         title: 'Elements of design',
         menuId: 'elements',
+        subtitle: 'UNDER CONSTRUCTION',
         hidden: true,
-        labels: [
-            {
-                cardId: 'line',
-                title: 'Lines',
-                subtitle: 'Do I seriously need to explain this one?'
-            }
-        ]
+        unclickable: true
+        //labels: [
+            //{
+                //cardId: 'line',
+                //title: 'Lines',
+                //subtitle: 'Do I seriously need to explain this one?',
+            //}
+        //]
     },
 
     // Orbit 3
