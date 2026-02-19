@@ -63,7 +63,7 @@ splashLines = [
     `<div style="font-size:16px; transform: rotate(180deg)">rotate your monitor</div>`,
     `<div style="font-size:16px; transform: scaleX(-1)">oops! wrong direction...</div>`,
     `<div style="font-size:16px; transform: scaleY(0.8) skew(-60deg)">ow my back hurts</div>`,
-    `<a style="font-size:15px; text-decoration: none" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" >Click here for a free prize!</a>`,
+    `<a style="font-size:15px; text-decoration: none" href="https://www.youtube.com/watch?v=s-L4DqanZYw" target="_blank" >Click here for a free prize!</a>`,
     `<b style="font-size:16px; color:var(--color-2)">I'M BLUE NOW!</b>`,
     `<b style="font-size:13px; color:var(--color-4)">I'M... red!? wait no this ain't right</b>`,
     `<b style="font-size:15px; color:var(--color-5)">how to reset color???</b>`,

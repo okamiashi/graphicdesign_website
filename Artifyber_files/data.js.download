@@ -3,8 +3,8 @@
     -------------------------- */
 
 // Metadata
-const lastUpdated = 'February 13th, 2026';
-const version = '0.4.15-CH.0.3';
+const lastUpdated = 'February 18th, 2026';
+const version = '0.4.15-CH.0.4';
 
 // menu logo redirection
 menuLogoRedirect = 'autobio:description';
@@ -237,14 +237,13 @@ let menuItems = [
         subtitle: 'All about me',
         image: 'icons/l-carrd.png',
         scale: 1,
-        color: 'var(--color-15)',
+        color: 'var(--color-19)',
         orbit: 1,
         labels: [
             {
                 cardId: 'description',
                 title: 'Description',
                 subtitle: 'Everything you <i>need</i> to know. Everything else is wants.',
-                color: 'var(--color-9)',
                 detail: 
                 `<br><b>Hey! It's me!</b><br>
                 <br>
@@ -312,10 +311,12 @@ let menuItems = [
                 cardId: 'credits',
                 title: 'Credits',
                 banner: true,
+                image: 'icons/temp3.png',
                 subtitle: `This template is amazing, and it's even moreso that this is free to use!`,
                 detail:
                 `This template was made by an individual that goes by the name Artifyber. She often makes art and has a LOT of characters and a LOT of lore to go along with them.
                 She also dabbles with making music every now and then, and is planning on making a game including some of her characters.<br>
+                <br>
                 Link: <a href='https://artifyber.xyz'>artifyber.xyz</a>
                 <br><br>
                 <b>Some examples of her characters:</b><br>
@@ -337,7 +338,7 @@ let menuItems = [
         showTitle: true,
         orbit: 1,
         image: 'icons/folder.png',
-        color: 'var(--color-19)',
+        color: 'var(--color-15)',
         labels: [
             {
                 linkId: 'autobio',
@@ -348,6 +349,11 @@ let menuItems = [
                 linkId: 'notes',
                 image: 'icons/info.png',
                 subtitle: 'Everything to know about graphic design'
+            },
+            {
+                linkId: 'projects',
+                image: 'icons/comm-art.png',
+                subtitle: `Every project I've done in Design Studies`,
             },
             {
                 linkId: 'links',
@@ -370,7 +376,7 @@ let menuItems = [
         subtitle: 'Everything to know about graphic design',
         showTitle: true,
         image: 'icons/info.png',
-        color: 'var(--color-3)',
+        color: 'var(--color-11)',
         orbit: 2,
         labels: [
             {
@@ -396,7 +402,8 @@ let menuItems = [
             {
                 cardId: 'balance',
                 title: 'Balance',
-                subtitle: `Everything has a 'weight' to it. Balance is 'balancing' that weight. I think.`,
+                subtitle: `Everything has a 'weight' to it.`,
+                image: 'images/thumbnails/balance.png',
                 detail: 
                     `<h3>Everything in design has a sort of 'weight' to it. A deep red is fairly 'heavy', but a light gray is, well, 'light'.</h3><br>
                     Balancing these weights are fairly important to design. Sometimes it's okay to intentionally imbalance the weights if that's your style, but it's
@@ -408,7 +415,8 @@ let menuItems = [
             {
                 cardId: 'contrast',
                 title: 'Contrast',
-                subtitle: 'You should know what this means already',
+                subtitle: 'You should know this already',
+                image: 'images/thumbnails/contrast.png',
                 detail: `<h3>Yep. It's contrast. One of the most well-known and easily understood elements of design there is.</h3><br>
                 Contrast is the difference in near elements. For example, the contrast between a person and the sky is big (skin and blue are very different colors),
                 but the contrast between a person and a wall (often similar colors) are small.<br><br>
@@ -423,7 +431,8 @@ let menuItems = [
             {
                 cardId: 'emphasis',
                 title: 'Emphasis',
-                subtitle: 'When contrast is high intentionally',
+                subtitle: 'When contrast intentionally high',
+                image: 'images/thumbnails/emphasis.png',
                 detail: `<h3>When contrast is intentionally high to make a part of the image more visible or noticeable.</h3><br>
                 Emphasis is best used when you want something to stand out. Have a person you want to highlight? Put a dark background and shine a light on him.
                 Have an item you want to contrast? Make the surrounding elements as different as possible, but similar to each other.<br>
@@ -434,7 +443,8 @@ let menuItems = [
             {
                 cardId: 'hierarchy',
                 title: 'Hierarchy',
-                subtitle: `Hey, I'm as confused as you on this one`,
+                subtitle: `Hey, I'm as confused as you on this`,
+                image: 'images/thumbnails/hierarchy.png',
                 detail: `<h3>From what I understand of hierarchy, it isnt as complicated as it sounds, it just has a strange name.</h3><br>
                 Hierarchy in design is how easily an image is processed. A super complicated image with about 7 different subjects is gonna be
                 pretty bad as a logo or something you want the viewer to see and then leave.<br>
@@ -450,7 +460,8 @@ let menuItems = [
             {
                 cardId: 'movement',
                 title: 'Movement',
-                subtitle: 'The flow of an image<br>(wait how can an image move)',
+                subtitle: 'The flow of an image<br>wait how can an image move',
+                image: 'images/thumbnails/movement.png',
                 detail: `<h3>Movement refers to where the viewer's eye travels over a design.</h3><br>
                 If you have a <a data-open-card="principles:hierarchy">hierarchy</a> of subjects in an image, how are you going to control where a viewer's eyes are going to 
                 go first? Who's to say they won't look at the second one first? Or the third? Fifth?<br>
@@ -463,7 +474,8 @@ let menuItems = [
             {
                 cardId: 'pattern',
                 title: 'Pattern',
-                subtitle: 'Use your brain, you can figure it out. You can do it.',
+                subtitle: 'Use your brain, figure it out',
+                image: 'images/thumbnails/pattern.png',
                 detail: `<h3>Pattern is just that. A pattern.</h3><br>
                 It is literally just a repeated design in an image. That is all a pattern is.<br>
                 Seriously. I literally don't have anything more to write here. So example image it is.<br>
@@ -475,6 +487,7 @@ let menuItems = [
                 cardId: 'proportion',
                 title: 'Proportion',
                 subtitle: 'I aint even saying anything',
+                image: 'images/thumbnails/proportion.png',
                 detail: `<h3>Proportion is literally just how big or small a thing is compared to another thing.<br>
                 That's it.</h3><br>
                 The larger, the easier it is to see. <a data-open-card='principles:contrast'>Contrasting</a> small things is the best way to
@@ -486,7 +499,8 @@ let menuItems = [
             {
                 cardId: 'repetition',
                 title: 'Repetition',
-                subtitle: 'Similar to pattern, but a <i>little</i> bit different.',
+                subtitle: 'A <i>little</i> bit different than pattern',
+                image: 'images/thumbnails/repetition.png',
                 detail: `<h3>Repeating an element in an image is a good way to make it very high in the <a data-open-card='principles:hierarchy'>hierarchy</a>.</h3><br>
                 Obviously, making a bunch of a thing makes it very easy to see that thing. Horrible when overdone, though; usually used to just 'spice' an image up.<br>
                 <br>
@@ -496,7 +510,8 @@ let menuItems = [
             {
                 cardId: 'rhythm',
                 title: 'Rhythm',
-                subtitle: 'Similar to pattern and repetition plus a bit of movement',
+                subtitle: 'Pattern and movement in one',
+                image: 'images/thumbnails/rhythm.png',
                 detail: `<h3>Rhythm is <i>how</i> the eyes move rather than where. How cleanly you look from one element to another.</h3><br>
                 A good example for this is music. Rhythm in design is the same as rhythm in music.<br>
                 <br>
@@ -506,19 +521,22 @@ let menuItems = [
             {
                 cardId: 'unity',
                 title: 'Unity',
-                subtitle: 'One singular thing about an image turned up to the max',
+                subtitle: 'Make one thing the <i>only</i> thing',
+                image: 'images/thumbnails/unity.png',
                 detail: `<h2>UNDER CONSTRUCTION</h2>`
             },
             {
                 cardId: 'variety',
                 title: 'Variety',
                 subtitle: `It's... variety.`,
+                image: 'images/thumbnails/variety.png',
                 detail: `<h2>UNDER CONSTRUCTION</h2>`
             },
             {
                 cardId: 'space',
                 title: 'Space',
                 subtitle: 'SPAAAAAAAACE',
+                image: 'images/thumbnails/space.png',
                 detail: `<h2>UNDER CONSTRUCTION</h2>`
             }
         ]
@@ -526,18 +544,141 @@ let menuItems = [
 
     {
         //Elements of design
-        title: 'Elements of design',
         menuId: 'elements',
+        title: 'Elements of design',
         subtitle: 'UNDER CONSTRUCTION',
         hidden: true,
-        unclickable: true
-        //labels: [
-            //{
-                //cardId: 'line',
-                //title: 'Lines',
-                //subtitle: 'Do I seriously need to explain this one?',
-            //}
-        //]
+        labels: [
+            {
+                cardId: 'line',
+                title: 'Lines',
+                subtitle: 'Do I seriously need to explain this one?',
+                banner: true,
+                detail: `<h2>UNDER CONSTRUCTION</h2>`
+            },
+            {
+                cardId: 'color',
+                title: 'Color',
+                subtitle: 'Again, do I need to explain this one?',
+                banner: true,
+                detail: `<h2>UNDER CONSTRUCTION</h2>`
+            },
+            {
+                cardId: 'value',
+                title: 'Value',
+                subtitle: 'Higher the brighter, lower the darker',
+                banner: true,
+                detail: `<h2>UNDER CONSTRUCTION</h2>`
+            },
+            {
+                cardId: 'space',
+                title: 'Space',
+                subtitle: 'Even when nothing is there, there is space.',
+                banner: true,
+                detail: `<h2>UNDER CONSTRUCTION</h2>`
+            },
+            {
+                cardId: 'shape',
+                title: 'Shape',
+                subtitle: 'Figure it out on your own!',
+                banner: true,
+                detail: `<h2>UNDER CONSTRUCTION</h2>`
+            },
+            {
+                cardId: 'form',
+                title: 'Form',
+                subtitle: 'The shape, symmetry, etc. of design',
+                banner: true,
+                detail: `<h2>UNDER CONSTRUCTION</h2>`
+            },
+            {
+                cardId: 'texture',
+                title: 'Texture',
+                subtitle: `With the right texture you can 'feel' the image`,
+                banner: true,
+                detail: `<h2>UNDER CONSTRUCTION</h2>`
+            }
+        ]
+    },
+
+
+    {
+        //Projects 
+        menuId: 'projects',
+        title: 'Projects',
+        subtitle: `Every project I've done in Design Studies`,
+        orbit: 2,
+        showTitle: true,
+        image: 'icons/comm-art.png',
+        color: 'var(--color-6)',
+        labels: [
+            {
+                linkId: 'gif',
+                image: 'icons/loading.gif',
+                subtitle: 'About making a gif and all that junk'
+            },
+            {}
+        ]
+    },
+
+    {
+        //Gifs
+        menuId: 'gif',
+        title: 'Gifs',
+        subtitle: 'All about making a gif and all that junk',
+        image: 'icons/loading.gif',
+        hidden: true,
+        labels: [
+            {
+                cardId: 'project',
+                title: 'Project',
+                banner: true,
+                subtitle: 'What I did',
+                detail: `<h2>If you wanna know how to make a gif, I'm the guy. I know gifs.</h2><br>
+                In fact, I'd say I know them too well. I almost always go the manual route when the most simple
+                of tools fail.<br>
+                <br>
+                For example, the most common way I edit a gif is with a site called <a href='https://ezgif.com'>ezgif.com</a>.<br>
+                If that fails, or what I want is too complicated of an ask for it, I extract the raw data of the gif in images using the site,
+                and manually go through each image one-by-one with <a href='https://www.getpaint.net'>paint.net</a>.<br>
+                <br>
+                Obviously this is horriffically inefficient. But it (at least somewhat) works.<br>
+                <br>
+                <h3>Some examples of my (horrible) work:</h3><br>
+                <img src='images/sy.gif' height=250px><br>
+                The original gif:<br>
+                <img src=images/sy_original.gif height=150px><br>
+                pretty much all I did was make it blue and got rid of the yellow background. I did it to get an animated pfp, also because this fits
+                one of my characters *very* well (named Obake, a shapeshifter character). I got it from a video animation from <a href='https://www.tiktok.com/@znackish'>Znackish</a>.<br>
+                <br>
+                <h3>Also, I have done some manual gifs (as in animation), but they arent great with my horrible art skills:</h3><br>
+                <img src='images/animation.gif' height=250px><br>`
+            },
+            {
+                cardId: 'notes',
+                title: 'Notes',
+                banner: true,
+                subtitle: 'A description of what gifs are and how to make them',
+                detail: `<h2>So you wanna make a gif?</h2><br>
+                First step is to find out what you wanna make.<br>
+                Now you need to find what medium to use. Whether it be the most specialized gif tool or simply gluing a bunch of images together,
+                what works for you works.<br>
+                Then, with whatever tool you have, you simply make your idea.<br>
+                <br>
+                <h3>It's that simple!</h3><br>
+                Seriously. That's literally all you need to make a gif. An idea, a tool, and... that's it.<br>
+                <br>
+                <h2>Some tools I use (and others):</h2>
+                <h2><a href='https://ezgif.com'>Ezgif.com</a></h2>
+                A very simple and intuitive tool with many features for gif and video-related editing. Works in browser without need to install anything,
+                and (from what I've seen), no ads!<br>
+                <h2>Any animation program</h2>
+                If it animates, it can gif.<br>
+                <h2><a href='https://www.adobe.com/ca/products/photoshop.html'>Photoshop</a></h2>
+                I don't use this one, cuz you have to install it, but it's <i>the</i> go-to, so much so that editing an image in any capacity is called 
+                'photoshopping' it.`
+            }
+        ]     
     },
 
     // Orbit 3
@@ -549,7 +690,7 @@ let menuItems = [
         subtitle: 'All links to my social media',
         showTitle: true,
         image: 'icons/earth.png',
-        color: 'var(--color-1)',
+        color: 'var(--color-12)',
         orbit: 3,
         labels: [
             {

@@ -95,21 +95,10 @@ let appLoaded = false;
 // Declare all BGM elements
 const bgm = {
     fyberverse: document.getElementById("bgmFyberverse"),
-    deltadim: document.getElementById("bgmDeltadim"),
-    floriverse: document.getElementById("bgmFloriverse"),
-    digirel: document.getElementById("bgmDigirel"),
-    nansenz: document.getElementById("bgmNansenz"),
-    hizen: document.getElementById("bgmHizen"),
-    nadir: document.getElementById("bgmNadir"),
 };
 
 const menuToBgm = {
-    deltadim: "deltadim",
-    floriverse: "floriverse",
-    digirel: "digirel",
-    nansenz: "nansenz",
-    hizen: "hizen",
-    nadir: "nadir",
+
 };
 
 const silentMenus = new Set([
