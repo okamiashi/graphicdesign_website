@@ -460,7 +460,7 @@ let menuItems = [
             {
                 cardId: 'movement',
                 title: 'Movement',
-                subtitle: 'The flow of an image<br>wait how can an image move',
+                subtitle: `The 'flow' of an image. Don't ask me how an image moves`,
                 image: 'images/thumbnails/movement.png',
                 detail: `<h3>Movement refers to where the viewer's eye travels over a design.</h3><br>
                 If you have a <a data-open-card="principles:hierarchy">hierarchy</a> of subjects in an image, how are you going to control where a viewer's eyes are going to 
@@ -523,21 +523,46 @@ let menuItems = [
                 title: 'Unity',
                 subtitle: 'Make one thing the <i>only</i> thing',
                 image: 'images/thumbnails/unity.png',
-                detail: `<h2>UNDER CONSTRUCTION</h2>`
+                detail: `<h2>Make the thing you want the viewer to see the ONLY thing to see.</h2><br>
+                If you want something to stand out, a good way is to make it the only thing to be able to stand out. Whether that be one object in the scene or a certain 'vibe',
+                you can't ignore something if it's the only thing.<br>
+                <br>
+                Think of it like this. Say you want a photo of your bedroom. Now, why would you add rocks?<br>
+                Answer: you don't. Rocks aren't meant to be in bedrooms. A rock would break the unity of the concept of a bedroom.<br>
+                Another way to think of it is like adding salt to fries. Salt is good on fries, it's even expected. That's a complimentary additive to fries. Now, add water.
+                Salt and fry soup. Now the unity of fries is ruined and you have a lot of wet fries.<br>
+                <br>
+                <b>Example:</b><br>
+                <img src='images/unity.png' height=250px>`
             },
             {
                 cardId: 'variety',
                 title: 'Variety',
                 subtitle: `It's... variety.`,
                 image: 'images/thumbnails/variety.png',
-                detail: `<h2>UNDER CONSTRUCTION</h2>`
+                detail: `<h2>Variety is pretty much the opposite of <a data-open-card='principles:unity'>unity</a>.</h2><br>
+                Variety is adding elements that don't fit on purpose, but in the right way. Fry soup? Horrible. But I've seen some very interesting recipies. For example,
+                marshmallow, buttermilk and chocolate cookies, called <a href='https://shannonmessenger.com/keeper-of-lost-cities/recipes.html'>Mallowmelt cookies</a>.
+                They're not your average cookie, but they're amazing.<br>
+                <br>
+                <b>The cookies:</b><br>
+                <img src='images/mallowmelt.png' height=250px><br>
+                <br>
+                <b>Example of variety:</b><br>
+                <img src='images/variety.png' height=250px><br>`
             },
             {
-                cardId: 'space',
+                cardId: 'principles:space',
                 title: 'Space',
                 subtitle: 'SPAAAAAAAACE',
                 image: 'images/thumbnails/space.png',
-                detail: `<h2>UNDER CONSTRUCTION</h2>`
+                detail: `<h2>Space in design is literally what the word means. It's space.</h2><br>
+                In specific, it's called negative space. Where there's nothing in an image. Pretty much just a solid color.<br>
+                It's used most commonly in logos. Not too much, not too little, just enough to make it roomy, but not too roomy.<br>
+                <br>
+                <b>Examples:</b><br><br><br>
+                <img src='images/space.png' height=250px><br>
+                `
             }
         ]
     },
@@ -554,6 +579,7 @@ let menuItems = [
                 title: 'Lines',
                 subtitle: 'Do I seriously need to explain this one?',
                 banner: true,
+                image: 'images/thumbnails/lines.png',
                 detail: `<h2>UNDER CONSTRUCTION</h2>`
             },
             {
@@ -561,6 +587,7 @@ let menuItems = [
                 title: 'Color',
                 subtitle: 'Again, do I need to explain this one?',
                 banner: true,
+                image: 'images/thumbnails/color.png',
                 detail: `<h2>UNDER CONSTRUCTION</h2>`
             },
             {
@@ -568,20 +595,22 @@ let menuItems = [
                 title: 'Value',
                 subtitle: 'Higher the brighter, lower the darker',
                 banner: true,
+                image: 'images/thumbnails/value.png',
                 detail: `<h2>UNDER CONSTRUCTION</h2>`
             },
             {
-                cardId: 'space',
+                cardId: 'elements:space',
                 title: 'Space',
-                subtitle: 'Even when nothing is there, there is space.',
+                subtitle: 'SPAAAAAAAAAAAAAAACE',
                 banner: true,
-                detail: `<h2>UNDER CONSTRUCTION</h2>`
+                image: 'images/thumbnails/space.png'
             },
             {
                 cardId: 'shape',
                 title: 'Shape',
-                subtitle: 'Figure it out on your own!',
+                subtitle: 'there is literally a square and a triangle and it looks like not a square and a triangle what',
                 banner: true,
+                image: 'images/thumbnails/shape.png',
                 detail: `<h2>UNDER CONSTRUCTION</h2>`
             },
             {
@@ -589,6 +618,7 @@ let menuItems = [
                 title: 'Form',
                 subtitle: 'The shape, symmetry, etc. of design',
                 banner: true,
+                image: 'images/thumbnails/form.png',
                 detail: `<h2>UNDER CONSTRUCTION</h2>`
             },
             {
@@ -596,6 +626,7 @@ let menuItems = [
                 title: 'Texture',
                 subtitle: `With the right texture you can 'feel' the image`,
                 banner: true,
+                image: 'images/thumbnails/texture.png',
                 detail: `<h2>UNDER CONSTRUCTION</h2>`
             }
         ]
@@ -894,45 +925,7 @@ let menuItems = [
             },
         ]
     },
-    {
-        title: 'Whitespace',
-        menuId: 'yolkspocketdimension',
-        subtitle: '',
-        image: '',
-        color: 'var(--color-10)',
-        orbit: 127,
-        scale: 0.5,
-        invisible: true,
-        labels: [
-            {
-                id: 1,
-                cardId: 'blank',
-                title: ' ',
-                subtitle: '',
-                detail:
-                    ``,
-                image: 'icons/whitespace.png'
-            },
-        ]
-    },
 ];
-
-// Beecat
-if (Math.floor(Math.random() * 333) == 0) {
-    menuItems.forEach(menu => {
-        if (menu.name == "Information") {
-            menu.labels.unshift({
-                cardId: 'beecat',
-                title: 'Beecat',
-                subtitle: 'Beecat',
-                detail: `It's a bee!<br>It's a cat!<br>It's a beecat!<br>And it's spinning!<br>But why is it spinning?<br><br>
-                Character by <a href="https://x.com/ZestyLemonss" target="_blank">ZestyLemonss</a><br><br>
-                <img src="images/beecatspin.gif" data-caption="Beecat" data-subcaption="beecatspin.gif" style="width: 100%">`,
-                image: 'images/beecatspin.gif'
-            });
-        }
-    });
-}
 
 
 
@@ -960,15 +953,11 @@ specialSearch = {
     },
     something: {
         title: 'Something found!',
-        subtitle: `...It's just me LOL<br>
-        My name is omniLens btw! You've probably met my brother omniTracer! He's such a powerful guy...<br>
-        Lowkey i'm kinda jealous of him. I wish to be as powerful as him one day :(`
+        subtitle: ``
     },
     content: {
         title: 'Content found!',
-        subtitle: `Yup, i am the content. You've found me heehee!<br>
-        Aww you listened to what i said!<br>
-        Good boy :)`
+        subtitle: ``
     },
     help: {
         title: 'help yourself bro LOLXD',
