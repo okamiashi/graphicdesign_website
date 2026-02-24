@@ -3,8 +3,8 @@
     -------------------------- */
 
 // Metadata
-const lastUpdated = 'February 18th, 2026';
-const version = '0.4.15-CH.0.4';
+const lastUpdated = 'February 24th, 2026';
+const version = '0.4.15-CH.0.5';
 
 // menu logo redirection
 menuLogoRedirect = 'autobio:description';
