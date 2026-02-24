@@ -644,11 +644,11 @@ let menuItems = [
         color: 'var(--color-6)',
         labels: [
             {
-                linkId: 'gif',
-                image: 'icons/loading.gif',
-                subtitle: 'About making a gif and all that junk'
+                linkId: 'gif'
             },
-            {}
+            {
+                linkId: 'albumcover'
+            }
         ]
     },
 
@@ -661,7 +661,7 @@ let menuItems = [
         hidden: true,
         labels: [
             {
-                cardId: 'project',
+                cardId: 'gif:project',
                 title: 'Project',
                 banner: true,
                 subtitle: 'What I did',
@@ -686,7 +686,7 @@ let menuItems = [
                 <img src='images/animation.gif' height=250px><br>`
             },
             {
-                cardId: 'notes',
+                cardId: 'gif:notes',
                 title: 'Notes',
                 banner: true,
                 subtitle: 'A description of what gifs are and how to make them',
@@ -710,6 +710,58 @@ let menuItems = [
                 'photoshopping' it.`
             }
         ]     
+    },
+
+    randomAlbumCover = [
+        'images/albumcover/earth.png',
+        'images/albumcover/mars.png',
+        'images/albumcover/neptune.png',
+        'images/albumcover/mercury.png',
+        'images/albumcover/venus.png',
+        'images/albumcover/uranus.png',
+        'images/albumcover/jupiter.png',
+        'images/albumcover/saturn.png',
+    ],
+
+
+
+    {
+        // Album cover
+
+        menuId: 'albumcover',
+        title: 'Album cover',
+        subtitle: 'Reload the page and see something neat!',
+        image: `${randomAlbumCover[Math.floor(Math.random() * randomAlbumCover.length)]}`,
+        hidden: true,
+        labels: [
+            {
+                cardId: 'albumcover:project',
+                title: 'Project',
+                subtitle: 'What I did',
+                detail: `<h2>I had a lot of ideas for this project. Though it was easy to settle on one.</h2><br>
+                At the start, I was thinking of making a very simple album cover with just a guy and a detective hat, side view of his face. I was thinking
+                of I Expect You To Die and it's music, as well as Mission Impossible and one specific song from CG5 which I don't know the name of (and am
+                too lazy to search up).<br>
+                Then I drifted to another genre and artist I like. In fact, I was thinking of the 
+                <a data-open-card='autobio:credits'>creator</a> of this exact site template. Yes, they even make music too!<br>
+                Most of their music is very 'electronic', and one song I really like, called <a href='https://www.youtube.com/watch?v=Gf02GVdI7D0'>Rain</a>.
+                Given my propensity for computers and my current attempt of simulating the O(√n) speedup of Grover's algorithm, in Quantum Computers. And of course,
+                every new technology needs their mathematical notation, thus the Bra and the Ket was born:<br>
+                <img src='images/braket.png'><br>
+                Bra and ket were a derivitive from a misspelling of Bracket (braket → bra + ket). A bra maps each vector (quantum bit: qubit) to a number in the 
+                complex plane, and a ket maps a vector in complex Vector space of N-1 dimensions (weird probability jargon).<br>
+                Pretty much, become a quantum scientist and *then* you can understand this album cover.<br>
+                <br>
+                <b>Design elements used:<br>
+                1. Space<br>
+                2. Emphasis<br>
+                3. Unity<br>
+                <br>
+                My project:</b><br>
+                <img src='images/albumcover.gif'>`
+            }
+        ]
+        
     },
 
     // Orbit 3
