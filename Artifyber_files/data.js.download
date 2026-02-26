@@ -55,6 +55,17 @@ orbitData = [
 // var(--color-18): Rising sky?
 // var(--color-19): Wizard purple
 
+randomAlbumCover = [
+    'images/albumcover/earth.png',
+    'images/albumcover/mars.png',
+    'images/albumcover/neptune.png',
+    'images/albumcover/mercury.png',
+    'images/albumcover/venus.png',
+    'images/albumcover/uranus.png',
+    'images/albumcover/jupiter.png',
+    'images/albumcover/saturn.png',
+];
+
 // Main menu data array
 let menuItems = [
     /* --------------------------
@@ -711,19 +722,6 @@ let menuItems = [
             }
         ]     
     },
-
-    randomAlbumCover = [
-        'images/albumcover/earth.png',
-        'images/albumcover/mars.png',
-        'images/albumcover/neptune.png',
-        'images/albumcover/mercury.png',
-        'images/albumcover/venus.png',
-        'images/albumcover/uranus.png',
-        'images/albumcover/jupiter.png',
-        'images/albumcover/saturn.png',
-    ],
-
-
 
     {
         // Album cover
