@@ -737,6 +737,7 @@ let menuItems = [
             {
                 cardId: 'albumcover:project',
                 title: 'Project',
+                banner: true,
                 subtitle: 'What I did',
                 detail: `<h2>I had a lot of ideas for this project. Though it was easy to settle on one.</h2><br>
                 At the start, I was thinking of making a very simple album cover with just a guy and a detective hat, side view of his face. I was thinking
@@ -759,6 +760,38 @@ let menuItems = [
                 <br>
                 My project:</b><br>
                 <img src='images/albumcover.gif'>`
+            },
+            {
+                cardId: 'albumcover:reflection',
+                title: 'Reflection',
+                banner: true,
+                subtitle: `I'm sure you know what reflection means. Right...?`,
+                detail: `<h2>I had a decent bit of fun with this project.<br>
+                Reflection questions:</h2><br>
+                
+                <ol>
+                    <li><b>Which design principles did you focus on most?<br><br></b></li>
+                    <ul><li>Space, definitely. Most of it is white.<br><br></li></ul>
+
+                    <li><b>How do your design choices reflect the genre and mood?<br><br></b></li>
+                    <ul><li>It doesn't do this horriffically well, but it works amazingly if you know a little bit about quantum mechanics and the such.<br><br></li></ul>
+
+                    <li><b>What was challenging about not using text?<br><br></b></li>
+                    <ul><li>It wasn't really much of a challenge for me. I'm not the best with text anyway 
+                    (I can't even apply any fonts I download! Trust me, I've tried.)<br><br></li></ul>
+
+                    <li><b>What would you call your album based on your product?<br><br></b></li>
+                    <ul><li>There's many name ideas I have for this cover. So, why not list all of them?<br></li></ul>
+                </ol>
+                <ul><ul><ol>
+                    <li>Ternary → A better version of Binary. It takes the pros of <a href='https://www.youtube.com/watch?v=GVsUOuSjvcg'>analog computers</a> and the pros of 
+                    regular binary computers to make the best of both worlds. Yet we don't use it.<br>
+                    Source: <a href='https://www.youtube.com/watch?v=R4achTEgXEw'>The System That Could Replace Binary And Change Computers FOREVER</a><br><br></li>
+                    <li>Lightspeed → In refrence to recent quantum computers using <a href='https://www.youtube.com/watch?v=rbxcd9gaims'>photons</a><br><br></li>
+                    <li>404 → The HTTP code for when the connection to the site failed. There's also 400 → corruption, 403 → access denied (an error a bunch of us got in
+                    Social Studies not 30 minutes ago), or even 418, meaning literally, 'I'm a teapot', made by HTTP coders as an april fools joke against brewers.</li><br>
+                </ul></ul></ol>
+                `
             }
         ]
         
