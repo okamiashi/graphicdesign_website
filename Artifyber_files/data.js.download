@@ -4,7 +4,19 @@
 
 // Metadata
 const lastUpdated = 'February 26th, 2026';
-const version = '0.4.15-CH.0.6';
+const version = '0.4.15-CH.0.7';
+
+
+//Recent changes
+const recentChanges = [
+    `Finished the <a data-open-card='elements'>elements</a> section in notes</a>`, //02/26/26
+    `Created <a data-open-card='albumcover:reflection'>Reflection</a> in <a data-open-card='albumcover'>Album cover project</a>`, //02/26/26
+    `Fixed setting bug caused by an Outsider List` //02/26/26
+];
+
+
+const plannedChanges = `<i>Nothing planned yet; awaiting assignment</i>`;
+
 
 // menu logo redirection
 menuLogoRedirect = 'autobio:description';
@@ -55,6 +67,8 @@ orbitData = [
 // var(--color-18): Rising sky?
 // var(--color-19): Wizard purple
 
+
+
 randomAlbumCover = [
     'images/albumcover/earth.png',
     'images/albumcover/mars.png',
@@ -65,6 +79,7 @@ randomAlbumCover = [
     'images/albumcover/jupiter.png',
     'images/albumcover/saturn.png',
 ];
+
 
 // Main menu data array
 let menuItems = [
@@ -563,7 +578,7 @@ let menuItems = [
                 <img src='images/variety.png' height=250px><br>`
             },
             {
-                cardId: 'principles:space',
+                cardId: 'principlesspace',
                 title: 'Space',
                 subtitle: 'SPAAAAAAAACE',
                 image: 'images/thumbnails/space.png',
@@ -572,7 +587,8 @@ let menuItems = [
                 It's used most commonly in logos. Not too much, not too little, just enough to make it roomy, but not too roomy.<br>
                 <br>
                 <b>Examples:</b><br><br><br>
-                <img src='images/space.png' height=250px><br>
+                <img src='images/space.png' height=250px><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                (and if you've noticed, this is the same as the one in <a data-open-card='elements:elementsspace'>elements!</a>)
                 `
             }
         ]
@@ -582,7 +598,7 @@ let menuItems = [
         //Elements of design
         menuId: 'elements',
         title: 'Elements of design',
-        subtitle: 'UNDER CONSTRUCTION',
+        subtitle: '',
         hidden: true,
         labels: [
             {
@@ -591,7 +607,12 @@ let menuItems = [
                 subtitle: 'Do I seriously need to explain this one?',
                 banner: true,
                 image: 'images/thumbnails/lines.png',
-                detail: `<h2>UNDER CONSTRUCTION</h2>`
+                detail: `<h2>Seriously. Do I need to explain this one?</h2><br>
+                <i>sigh.</i><br>
+                <br>
+                <img src='images/line-element.png'><br>
+                Happy?<br>
+                It's literally just a line in a design. That's it.`
             },
             {
                 cardId: 'color',
@@ -599,7 +620,10 @@ let menuItems = [
                 subtitle: 'Again, do I need to explain this one?',
                 banner: true,
                 image: 'images/thumbnails/color.png',
-                detail: `<h2>UNDER CONSTRUCTION</h2>`
+                detail: `<h2>It's color. You should know what this is.</h2><br>
+                Why are you even here? It's color! Red makes ya feel mad, green makes ya think of plants, tada!<br>
+                <br>
+                <img src='images/thumbnails/color.png'>`
             },
             {
                 cardId: 'value',
@@ -607,14 +631,24 @@ let menuItems = [
                 subtitle: 'Higher the brighter, lower the darker',
                 banner: true,
                 image: 'images/thumbnails/value.png',
-                detail: `<h2>UNDER CONSTRUCTION</h2>`
+                detail: `<h2>As the subtitle says, higher the brighter, lower the darker.</h2><br>
+                It's literally just how bright something is. Not much else to explain.<br>
+                Pretty much, to use value, you're already doing it if you're using <a data-open-card='principles:contrast'>contrast.</a>`
             },
             {
-                cardId: 'elements:space',
+                cardId: 'elementsspace',
                 title: 'Space',
-                subtitle: 'SPAAAAAAAAAAAAAAACE',
+                subtitle: 'SPAAAAAAAACE',
                 banner: true,
-                image: 'images/thumbnails/space.png'
+                image: 'images/thumbnails/space.png',
+                detail: `<h2>Space in design is literally what the word means. It's space.</h2><br>
+                In specific, it's called negative space. Where there's nothing in an image. Pretty much just a solid color.<br>
+                It's used most commonly in logos. Not too much, not too little, just enough to make it roomy, but not too roomy.<br>
+                <br>
+                <b>Examples:</b><br><br><br>
+                <img src='images/space.png' height=250px><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                (and if you've noticed, this is the same as the one in <a data-open-card='principles:principlesspace'>principles!</a>)
+                `
             },
             {
                 cardId: 'shape',
@@ -622,7 +656,12 @@ let menuItems = [
                 subtitle: 'there is literally a square and a triangle and it looks like not a square and a triangle what',
                 banner: true,
                 image: 'images/thumbnails/shape.png',
-                detail: `<h2>UNDER CONSTRUCTION</h2>`
+                detail: `<h2>Everything is just a bunch a shapes that are molded and glued together to make stuff.</h2><br>
+                Both literally and in design, this is true. Atoms have a shape, and they make up your arm, which is a shape, which is a part of you. And guess what,
+                you're a lot of shapes. Same goes for design. When drawing a person, you draw the shapes, then you change those shapes to be more arm, and <i>then</i>
+                you draw the arm. Drawing the arm from scratch is just gonna lead to proportion issues later on.<br>
+                Another cool thing you can do with shapes is make 2D look 3D. For example, this cube is literally just a bunch of bent squares put together:<br><br>
+                <img src='images/shapes.gif'>`
             },
             {
                 cardId: 'form',
@@ -630,7 +669,12 @@ let menuItems = [
                 subtitle: 'The shape, symmetry, etc. of design',
                 banner: true,
                 image: 'images/thumbnails/form.png',
-                detail: `<h2>UNDER CONSTRUCTION</h2>`
+                detail: `<h2><a data-open-card='elements:shape'>Shape</a> to the next level.</h2><br>
+                Make those 2D shapes 3D, then add <a data-open-card='elements:value'>value</a>
+                to make it even more 3D.<br>
+                <br>
+                <b>Example:</b><br>
+                <img src='images/form.png'>`
             },
             {
                 cardId: 'texture',
@@ -638,7 +682,13 @@ let menuItems = [
                 subtitle: `With the right texture you can 'feel' the image`,
                 banner: true,
                 image: 'images/thumbnails/texture.png',
-                detail: `<h2>UNDER CONSTRUCTION</h2>`
+                detail: `<h2>Now, take <a data-open-card='elements:form'>form</a> to the next level.</h2><br>
+                Lean a bit more on the use of <a data-open-card='elements:value'>value</a>.<br>
+                <br>
+                Texture is fairly easy to understand in design, but almost impossible to implement digitally. Why most texture examples are photos instead.<br>
+                <br>
+                <b>Example:</b><br>
+                <img src='images/texture.png'>`
             }
         ]
     },
@@ -723,6 +773,8 @@ let menuItems = [
         ]     
     },
 
+
+
     {
         // Album cover
 
@@ -733,7 +785,7 @@ let menuItems = [
         hidden: true,
         labels: [
             {
-                cardId: 'albumcover:project',
+                cardId: 'project',
                 title: 'Project',
                 banner: true,
                 subtitle: 'What I did',
@@ -760,7 +812,7 @@ let menuItems = [
                 <img src='images/albumcover.gif'>`
             },
             {
-                cardId: 'albumcover:reflection',
+                cardId: 'reflection',
                 title: 'Reflection',
                 banner: true,
                 subtitle: `I'm sure you know what reflection means. Right...?`,
@@ -901,6 +953,21 @@ let menuItems = [
                         <div style='color: color-mix(in srgb, var(--accentl) 75%, transparent)' id="totalCharacterCounter"></div>
                         <div style='color: color-mix(in srgb, var(--accentl) 75%, transparent)' id="totalSplashCounter"></div>
                 `,
+                banner: true,
+                unclickable: true,
+                detail:
+                    ``,
+                image: ''
+            },
+            {
+                cardId: 'recentchanges',
+                title: 'Recent changes',
+                subtitle: `Recent changes:<br>
+                1. ${recentChanges[0]}</li><br>
+                2. ${recentChanges[1]}</li><br>
+                3. ${recentChanges[2]}</li><br>
+                <br>
+                Planned changes: ${plannedChanges}`,
                 banner: true,
                 unclickable: true,
                 detail:
