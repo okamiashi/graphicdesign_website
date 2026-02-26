@@ -9,6 +9,7 @@ const version = '0.4.15-CH.0.7';
 
 //Recent changes
 const recentChanges = [
+    `Created the Changelog (this thing!)` //02/26/26`,
     `Finished the <a data-open-card='elements'>elements</a> section in notes</a>`, //02/26/26
     `Created <a data-open-card='albumcover:reflection'>Reflection</a> in <a data-open-card='albumcover'>Album cover project</a>`, //02/26/26
     `Fixed setting bug caused by an Outsider List` //02/26/26
