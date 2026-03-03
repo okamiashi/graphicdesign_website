@@ -3,21 +3,79 @@
     -------------------------- */
 
 // Metadata
-const lastUpdated = 'March 2nd, 2026';
-const version = '0.4.15-CH.0.7.1';
+const version = '0.4.15-CH.0.7';
 
 
 //Recent changes
-const recentChanges = [
-    `Fixed a bug that caused a string to unwrap and be treated as an undefined function`, //03/02/26
-    `Created the Changelog (this thing!)`, //02/26/26
-    `Finished the <a data-open-card='elements'>elements</a> section in notes`, //02/26/26
-    `Created <a data-open-card='albumcover:reflection'>Reflection</a> in <a data-open-card='albumcover'>Album cover project</a>`, //02/26/26
-    `Fixed setting bug caused by an Outsider List` //02/26/26
+const changeLog = [
+    { date: "03/02/26", text: "Updated the Changelog to include a 'Show More' option and formatted the changelog to include dates."},
+    { date: "03/02/26", text: "Fixed a bug that caused a string to unwrap and be treated as an undefined function" },
+    { date: "02/26/26", text: "Created the Changelog (this thing!)" },
+    { date: "02/26/26", text: "Finished the <a data-open-card='elements'>elements</a> section in notes" },
+    { date: "02/26/26", text: "Created <a data-open-card='albumcover:reflection'>Reflection</a> in <a data-open-card='albumcover'>Album cover project</a>" },
+    { date: "02/26/26", text: "Fixed setting bug caused by an Outsider List" }
 ];
 
+const plannedChanges = `To (eventually) work on the Final Font project. Starts on paper so expect a wait.`;
 
-const plannedChanges = `<i>Nothing planned yet; awaiting assignment</i>`;
+
+
+
+
+
+
+
+
+// Convert to HTML string grouped by date
+let changelogHTML = "";
+let lastDate = "";
+changeLog.forEach(change => {
+    if (change.date !== lastDate) {
+        if (lastDate) changelogHTML += "</ul>"; // close previous date's list
+        changelogHTML += `<h3>${change.date}</h3><ul>`; // new date header + list
+        lastDate = change.date;
+    }
+    changelogHTML += `<li>${change.text}</li>`;
+});
+changelogHTML += "</ul>"; // close last list
+
+
+
+
+// Take the most recent update date and format only the changes of said date.
+latestUpdateObj = changeLog[0]; //assuming I'm not an idiot and changeLog is sorted correctly
+
+const recentChanges = changeLog
+  .filter(c => c.date === latestUpdateObj.date)
+  .map((c, i) => `${i + 1}. ${c.text}<br>`)
+  .join("");
+
+
+
+
+//Calculate lastUpdated from latestUpdateObj's mm/dd/yy into longm ddth, yyyy
+const dateStr = latestUpdateObj.date;
+const [month, day, year] = dateStr.split("/");
+
+// Convert 2-digit year to 4-digit (assumes 2000s)
+const fullYear = 2000 + Number(year);
+
+const date = new Date(fullYear, month - 1, day);
+
+const lastUpdated = date.toLocaleDateString("en-US", {
+  month: "long",
+  day: "numeric",
+  year: "numeric"
+});
+
+
+
+
+
+
+
+
+
 
 
 // menu logo redirection
@@ -893,6 +951,20 @@ let menuItems = [
     },
 
     {
+        menuId: 'changelog',
+        title: 'Changelog',
+        hidden: true,
+        invisible: true,
+        labels: [
+            {
+                cardId: 'changelogcard',
+                title: 'Changelog',
+                detail: `${changelogHTML}`
+            }  
+        ]
+    },
+
+    {
         // Settings
         menuId: 'settings',
         title: 'Settings',
@@ -964,10 +1036,9 @@ let menuItems = [
             {
                 cardId: 'recentchanges',
                 title: 'Recent changes',
-                subtitle: `Recent changes:<br>
-                1. ${recentChanges[0]}</li><br>
-                2. ${recentChanges[1]}</li><br>
-                3. ${recentChanges[2]}</li><br>
+                subtitle: `Changes on ${lastUpdated}:<br>
+                ${recentChanges}<br>
+                <a data-open-card='changelog:changelogcard'>Show more...</a><br>
                 <br>
                 Planned changes: ${plannedChanges}`,
                 banner: true,
