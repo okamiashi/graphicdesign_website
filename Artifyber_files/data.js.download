@@ -8,15 +8,18 @@ const version = '0.4.15-CH.0.7';
 
 //Recent changes
 const changeLog = [
+    { date: "03/17/26", text: "Updated the Changelog header to be bolded (was not able to previously due to style.css priority), and changed the Linktext to be darker"},
+    { date: "03/17/26", text: "Completed the <a data-open-card='finalfont' style='color: var(--accentch)'>Final Font project</a>"},
+    { date: "03/17/26", text: "Added a <a data-open-card='fontsandtypefaces' style='color: var(--accentch)'>Fonts and Typefaces</a> section in <a data-open-card='notes' style='color: var(--accentch)'>Notes</a>"},
     { date: "03/02/26", text: "Updated the Changelog to include a 'Show More' option and formatted the changelog to include dates."},
     { date: "03/02/26", text: "Fixed a bug that caused a string to unwrap and be treated as an undefined function" },
     { date: "02/26/26", text: "Created the Changelog (this thing!)" },
-    { date: "02/26/26", text: "Finished the <a data-open-card='elements'>elements</a> section in notes" },
-    { date: "02/26/26", text: "Created <a data-open-card='albumcover:reflection'>Reflection</a> in <a data-open-card='albumcover'>Album cover project</a>" },
+    { date: "02/26/26", text: "Finished the <a data-open-card='elements' style='color: var(--accentch)'>elements</a> section in notes" },
+    { date: "02/26/26", text: "Created <a data-open-card='albumcover:reflection' style='color: var(--accentch)'>Reflection</a> in <a data-open-card='albumcover' style='color: var(--accentch)'>Album cover project</a>" },
     { date: "02/26/26", text: "Fixed setting bug caused by an Outsider List" }
 ];
 
-const plannedChanges = `To (eventually) work on the Final Font project. Starts on paper so expect a wait.`;
+const plannedChanges = `Waiting for further instructions`;
 
 
 
@@ -474,6 +477,12 @@ let menuItems = [
                 linkId: 'elements',
                 title: 'Elements of design',
                 banner: true
+            },
+            {},
+            {
+                linkId: 'fontsandtypefaces',
+                title: 'Fonts and Typefaces',
+                banner: true
             }
         ]
     },
@@ -755,6 +764,50 @@ let menuItems = [
 
 
     {
+        //Fonts and typefaces
+        menuId: 'fontsandtypefaces',
+        title: 'Fonts and typefaces',
+        subtitle: `It's just fonts, man.`,
+        hidden: true,
+        labels: [
+            {
+                cardId: 'font',
+                title: 'Fonts',
+                subtitle: '',
+                detail: `<h2>You should know what a font is.</h2><br>
+                I mean, if you don't, here is NOT the place to learn. Go google it.<br>
+                <br>
+                Anyways, a font is a set of characters called "glyphs" in something called a <a data-open-card='fonts:typeface'>Typeface</a>.<br>
+                <br>
+                <b>Example:</b><br>
+                <img src='images/font.png'>`
+            },
+            {
+                cardId: 'typeface',
+                title: 'Typefaces',
+                subtitle: '',
+                detail: `<h2>You shouldnt know what a typeface is.</h2><br>
+                A typeface is a <i>family</i> of fonts. Think of Sans. There's 
+                <a style="font-family: 'Comic Sans MS', 'Comic Sans', cursive;">Comic Sans</a>, 
+                <a style="font-family: Arial, Helvetica, sans-serif;">Sans Serif</a>, 
+                even some niche ones like <a style="font-family: 'Agency FB', sans-serif;">Agency FB</a>, still fitting in the typeface of Sans.<br>
+                <br>
+                <b>Example:</b><br>
+                <img src='images/typefaces.png'>`
+            }
+        ]
+    },
+
+
+
+
+
+
+
+
+
+
+    {
         //Projects 
         menuId: 'projects',
         title: 'Projects',
@@ -769,6 +822,9 @@ let menuItems = [
             },
             {
                 linkId: 'albumcover'
+            },
+            {
+                linkId: 'finalfont'
             }
         ]
     },
@@ -903,8 +959,115 @@ let menuItems = [
                 </ul></ul></ol>
                 `
             }
+        ]  
+    },
+
+
+    {
+        //Final font
+        menuId: 'finalfont',
+        title: 'Font project',
+        image: 'images/digitized.png',
+        subtitle: 'Creating a neat design of a font in an object',
+        hidden: true,
+        labels: [
+            {
+                cardId: 'partone',
+                title: 'Part 1',
+                subtitle: 'Creating the image',
+                detail: `<h2>I am not an artist.</h2><br>
+                Though, my best art in art is usually geometric. A good example of a common drawing of mine is a <a data-open-card='sierpinski'>Sierpinski triangle</a>.
+                Besides that, here's what I thought of:
+                <ol>
+                    <li>A computer with all the parts as words, and each font representing each part</li>
+                    <li>A rubik's cube with each face as a part of 'rubik's cube' (rub, iks, cube)</li>
+                </ol>
+                And that's where my brain went dry, so I just went with the cube.<br>
+                <br>
+                My first order of buisness was to draw the cube lightly in pencil, to get the frame. And that's what I did, with a trace image (overlayed here)<br><br>
+                <img src='images/rubiksframe.png'><br>
+                After that, I struggled. The program I was using, paint.net, didn't allow stretching images (called "liquify"), and the only way to do that in the program 
+                was to install addons to paint.net. It required administrator to do that.<br>
+                To counteract this, I simply made three faces of the cube, and searched online for a net-to-cube program. Luckily, 
+                <a href='https://thecube.ninja/'>I found one</a>.<br>
+                Ignoring all the ads and popups to install viruses and/or bloatware (be careful!), I managed to create this:<br><br>
+                <img src='images/netofacube.png'><br><br>
+                Stenciling the same way I did for the last one, I drew all of the letters carefully, and ended up with this:<br><br>
+                <img src='images/uncolored.png'><br><br>
+                And eventually, after tracing with marker and coloring, I had this:<br><br>
+                <img src='images/colored.png'>`
+            },
+            {
+                cardId: 'parttwo',
+                title: 'Part 2',
+                subtitle: 'Porting to the digital world',
+                detail: `<h2>I have a confession to make.</h2>
+                For all the previous projects, I've had a workaround to not use Adobe Illustrator. For the <a data-open-card='gif'>Gif project</a>, I already had some gifs made
+                using <a href='https://ezgif.com'>Ezgif.com</a>. For the Album Cover project, all I needed was paint.net and the same <a href='https://ezgif.com'>Ezgif.com</a>
+                to do that.<br>
+                In fact, I havent even installed Adobe Illustrator yet (currently installing as I write this, as a matter of fact!). This'll be my test, to see how good
+                I am at everything computers.<br><br>
+                
+                <b>Update: My hatred for Adobe only gets worse by the day.</b><br>
+                No more time in the day to finish anything else, because I waited 30 minutes with my hand up, severely confused. Couldn't group the selections; 
+                "Can't make a group of objects that are within different groups", despite never making a group prior. Couldn't select something; the solution was to 
+                accidentally press P after 30 minutes and use the brush tool to draw in the red.<br>
+                Here's what I got on Illustrator after I pretty much gave up:<br>
+                <br>
+                <img src='images/ihateillustrator.png'><br><br>
+                Now using paint.net:<br><br>
+                <img src='images/digitized.png'>`
+            },
+            {
+                cardId: 'partthree',
+                title: 'Part 3',
+                subtitle: 'Reflection',
+                detail: `<h2>Guess who hates Adobe!</h2>
+                <a data-open-card='autobio'>This guy</a> hates Adobe!<br><br>
+                But seriously, this kind of shows how good I am at computers. I haven't tried the easy way because I've gotten so used to the hard, which makes me 
+                incredibly good at the hard.<br><br><br><br>
+
+                <h3>Concept and Design:</h3>
+                <ol>
+                    <li><b>What word did you choose and why?<br><br></b></li>
+                    <ul><li>I like puzzles. I like Rubik's cubes. Do I need more reason?<br><br></li></ul>
+
+                    <li><b>How did you turn it into a visual image?<br><br></b></li>
+                    <ul><li>I'm good at drawing shapes and straight lines. A Rubik's cube to fit the word "Rubiks Cube" simply makes sense.<br><br></li></ul>
+
+                    <li><b>Why did you choose your final colors?<br><br></b></li>
+                    <ul><li>The word I chose keeps answering these questions for me. My idea that took 2 minutes to come up with is apparently the best idea there is.<br>
+                    But for specific colors, I just used what I had (I had those color pencil crayons and paint.net has those colors built-in)<br><br></li></ul>
+                </ol>
+                <br><br>
+                <h3>Evaluation:</h3>
+                <ol>
+                    <li><b>What is the strongest part of your logo?<br><br></b></li>
+                    <ul><li>I guess the E? It's contrasted because it's sideways. Either that or the nice movement.<br><br></li></ul>
+
+                    <li><b>What would you improve?<br><br></b></li>
+                    <ul><li>It's very... bland? Like, most Typography designs use rounded objects for a reason; to exaggerate the text in interesting ways. 
+                    Mine just doesn't have that.<br><br></li></ul>
+
+                    <li><b>How does your logo show strong design principles (simplicity, readability, limited colors)?<br><br></b></li>
+                    <ul><li>It's very simple. It's an unscrambled Rubik's cube, the definition of simple. There's no puzzle because the puzzle is solved.<br>
+                    It's also fairly readable and only uses 3 colors (4 if you count black as one of the colors). Also, it has amazing movement to it.<br><br></li></ul>
+                </ol>
+                `
+            }
         ]
-        
+    },
+    {
+        //sirpinski triangle
+        menuId: 'sierpinski',
+        hidden: true,
+        labels: [
+            {
+                cardId: 'triangle',
+                title: 'Sierpinski triangle',
+                detail: `<img src='images/sierpinski.png' width=500px>`
+            }
+        ]
     },
 
     // Orbit 3
@@ -1036,7 +1199,7 @@ let menuItems = [
             {
                 cardId: 'recentchanges',
                 title: 'Recent changes',
-                subtitle: `Changes on ${lastUpdated}:<br>
+                subtitle: `<a style='text-decoration: none;'>Changes on ${lastUpdated}:</a><br><br>
                 ${recentChanges}<br>
                 <a data-open-card='changelog:changelogcard'>Show more...</a><br>
                 <br>
