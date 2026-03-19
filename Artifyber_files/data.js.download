@@ -8,6 +8,7 @@ const version = '0.4.15-CH.0.7';
 
 //Recent changes
 const changeLog = [
+    { date: "03/18/26", text: "Fixed an issue with a missing image (font.png) at <data-open-card='fontsandtypefaces:font' style='color: var(--accentch)'>Font notes</a>"},
     { date: "03/18/26", text: "Fixed an issue with a missing image (ihateillustrator.png) at <a data-open-card='finalfont:parttwo' style='color: var(--accentch)'>Final Font project Part Two</a>"},
     { date: "03/17/26", text: "Updated the Changelog header to be bolded (was not able to previously due to style.css priority), and changed the Linktext to be darker"},
     { date: "03/17/26", text: "Completed the <a data-open-card='finalfont' style='color: var(--accentch)'>Final Font project</a>"},
