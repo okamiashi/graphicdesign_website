@@ -8,7 +8,9 @@ const version = '0.4.15-CH.0.7';
 
 //Recent changes
 const changeLog = [
-    { date: "03/18/26", text: "Fixed an issue with a missing image (font.png) at <data-open-card='fontsandtypefaces:font' style='color: var(--accentch)'>Font notes</a>"},
+    { date: "03/25/26", text: "Updated the 'Hobbies' list in <a data-open-card='autobio' style='color: var(--accentch)'>Autobiography</a>"},
+    { date: "03/25/26", text: "Added the <a data-open-card='editedlogo' style='color: var(--accentch)'>Satirical Logo design</a> section"},
+    { date: "03/18/26", text: "Fixed an issue with a missing image (font.png) at <a data-open-card='fontsandtypefaces:font' style='color: var(--accentch)'>Font notes</a>"},
     { date: "03/18/26", text: "Fixed an issue with a missing image (ihateillustrator.png) at <a data-open-card='finalfont:parttwo' style='color: var(--accentch)'>Final Font project Part Two</a>"},
     { date: "03/17/26", text: "Updated the Changelog header to be bolded (was not able to previously due to style.css priority), and changed the Linktext to be darker"},
     { date: "03/17/26", text: "Completed the <a data-open-card='finalfont' style='color: var(--accentch)'>Final Font project</a>"},
@@ -21,7 +23,7 @@ const changeLog = [
     { date: "02/26/26", text: "Fixed setting bug caused by an Outsider List" }
 ];
 
-const plannedChanges = `Waiting for further instructions`;
+const plannedChanges = `Awaiting further instructions`;
 
 
 
@@ -368,13 +370,13 @@ let menuItems = [
                 `<b>My hobbies change <i>all the time,</i> so it's unlikely this list will stay for long. Also why it's just a list. If it
                 were any more complicated, it would simply take too long to update and it will never be updated.</b> <br>
                 <br>
-                My hobbies (as of February 13, 2026):<br>
+                My hobbies (as of March 25th, 2026):<br>
                 <br>
                     1. (obviously) Computer Science<br>
-                    2. Space simulators (KSP, SFS, etc.)<br>
+                    2. Space simulators (KSP, SFS, currently No Man's Sky)<br>
                     3. Numbers? I guess?<br>
-                    4. Ultrakill (game)<br>
-                    5. The Forest (game)<br>
+                    4. No Man's Sky<br>
+                    5. Morse code<br>
                 <br>
                 Here's some of my gameplay of Kerbal Space Program:<br>
                 <img src='images/solareclipse.png' height=300px>
@@ -827,6 +829,9 @@ let menuItems = [
             },
             {
                 linkId: 'finalfont'
+            },
+            {
+                linkId: 'editedlogo'
             }
         ]
     },
@@ -1068,6 +1073,163 @@ let menuItems = [
                 cardId: 'triangle',
                 title: 'Sierpinski triangle',
                 detail: `<img src='images/sierpinski.png' width=500px>`
+            }
+        ]
+    },
+
+    {
+        //Satirical logo Design
+        menuId: 'editedlogo',
+        title: 'Logo',
+        subtitle: 'The logo project? What else would this be?',
+        image: 'images/thumbnails/archbtw.png',
+        hidden: true,
+        labels: [
+            {
+                cardId: 'companyresearch',
+                title: 'Company Research',
+                subtitle: `It's the company research`,
+                banner: true,
+                detail: `<h3>Turns out I went overboard. Like usual.</h3>
+                I was <i>supposed</i> to only do one company, and I was also supposed to the research <i>before</i> I made the logo. Yet here we are:<br>
+                <br>
+                <img src='images/archbtw.png'><br>
+                So I guess I'm doing two companies!<br>
+                <br>
+                <h2>First company: Microslop</h2>
+                <ol>
+                    <li><b>Name: Microsoft<br></b></li>
+
+                    <li><b>Founding date: April 4th, 1975<br></b></li>
+
+                    <li><b>Founded by: Bill Gates & Paul Allen<br></b></li>
+
+                    <li><b>Provided Serivces:<br></b></li>
+                    <ul>
+                        <li>Beginning: BASIC interpreter for the MITS microcomputer<br></li>
+                        <li>Middle: Started making OSes in 1980 with Unix (a public base for almost every operating system)<br></li>
+                        <li>Today: Has made several technological developments alongside selling the top OS in the world (created a new state of matter!)<br></li>
+                    </ul><br>
+                    <li><b>Mission statement:<br></b></li>
+                    <ul><li>from Microsoft's website, "We believe that companies that can do more, should"<br></li></ul><br>
+                    <li><b>target audience:</b></li>
+                    <ul>
+                        <li>Gamers<br></li>
+                        <li>Developers<br></li>
+                        <li>Almost everyone with a computer<br></li>
+                    </ul><br>
+                    <li><b>Brand's visual elements:</b></li>
+                    <ul>
+                        <li>Logo: Very recognizable and very simple "window" logo, simply just four squares.<br></li>
+                        <li>Color: Red, green, blue, and yellow. All the primary colors, including additive (red, green, blue, like computer screens) and subtractive 
+                        (red, yellow, blue, like in art). Also, the text is a distinct and recognizable gray<br></li>
+                        <li>Font: <a style="font-family: 'Segoe UI semibold', sans-serif;">Segoe UI semibold</a>; very simple and recognizable font<br></li>
+                        <li>Style: Incredibly simplistic. 'The basic'.<br></li>
+                    </ul><br>
+                    <li><b>What image does the company try to present:</b></li>
+                    <ul><li>Microsoft tries to present itself as best as possible. It tries it's hardest to create new and amazing features, and praises them even if they're
+                    bad. Microsoft wants people to think it's a tool of need instead of want.<br></li></ul><br>
+                    <li><b>What are some criticisms, controversies, or public opinions about the company?<br>
+                    Ex. Labour practices, Environmental issues, Marketing tactics, Health concerns, Cultural impact:<br></b></li>
+                    <ul><li>Many people think Microsoft is extremely invasive and does whatever it wants without regard for what you want. It assumes what you want, often
+                    when you don't want it.<br>
+                    For example, there is no straightforward way to remove Copilot 365 from the Taskbar on Windows 11. The way I did it was through a tech Youtuber's bloatware
+                    removal tool. There is a LOT of bloat on Windows compared to other OSes; the OS I mainly use, Linux (KDE Neon), is barely two Gigabytes when installed on a USB 
+                    drive. Windows is seven. And that's just the installer; the actual OS size is much worse. For Linux, a decent chunk of what is installed is already on the drive,
+                    and most of the space taken up of the drive is empty space needed for other systems. For windows, it needs an internet connection to install, meaning that 
+                    7 gigabytes is JUST the install script, not what is actually being installed.<br></li></ul><br>
+                    <li><b>Based on your research, what do you think the brand actually represents?<br></b></li>
+                    <ul><li>I think it represents bloatware. A child, upset when you don't like it's drawing, forcing you to look at it and put it on the fridge.
+                    It represents how companies don't care about the audience and just care about their wants. They don't care that you don't like Gemini, they like it so you must
+                    like it as well.</li></ul>
+                </ol>
+                <i>Sources: <a href='https://en.wikipedia.org/wiki/Microsoft'>Wikipedia</a>, <a href='https://www.microsoft.com/en-ca/about'>Microsoft Website</a></i>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>Second company: I use Arch btw</h2>
+                <ol>
+                    <li><b>Name: Linux<br></b></li>
+
+                    <li><b>Founding date: September 17th, 1991<br></b></li>
+
+                    <li><b>Founded by: Linux Torvalds<br></b></li>
+
+                    <li><b>Provided Serivces: <br></b></li>
+                    <ul>
+                        <li>An open-source and completely free kernel<br></li>
+                        <ul>
+                            <li>Note: A kernel is the second layer in a computer's infrastructure. It connects the user interface to the hardware.<br>
+                                Example: A rasberry pi; the hardware is on the board and the software is written into through a computer. But the kernel interprets that software
+                                and implements it to the components</li>
+                        </ul>
+                    </ul><br>
+                    <li><b>Mission statement:<br></b></li>
+                    <ul><li>From Linux's website, "Empowering the generation of open source innovators"<br></li></ul><br>
+                    <li><b>target audience:</b></li>
+                    <ul>
+                        <li>Developers and coders<br></li>
+                        <li>Software engineers<br></li>
+                        <li>Server administrators/technicians<br></li>
+                        <li>Companies who don't want to pay and/or create their own kernel (eg. Android)</li>
+                    </ul><br>
+                    <li><b>Brand's visual elements:</b></li>
+                    <ul>
+                        <li>Logo: Easily recognizable penguin. You rarely see it, but the few times you do, you can recognize it. Though you usually ignore it
+                        since barely anyone uses linux as an OS (I do!!!)<br></li>
+                        <li>Color: Simple black and white with a hint of yellow. The black and white are background and secondary, and the yellow is contrasted.<br></li>
+                        <li>Font: <a style="font-family: Georgia semibold, serif;">Georgia;</a> a simple font that isn't very commonly used in logos, making it stand out.<br></li>
+                        <li>Style: Very distinct; hard to mistake for something else, very easy to recognize even when you don't see it often.<br></li>
+                    </ul><br>
+                    <li><b>What image does the company try to present:</b></li>
+                    <ul><li>It doesn't really need to 'present' itself as anything because it is exactly what they want to present. It's an open-source kernel; ANYONE
+                    can use it for free at no cost. ANYONE can make whatever they want with it. ANYONE can make ANYTHING.<br></li></ul><br>
+                    <li><b>What are some criticisms, controversies, or public opinions about the company?<br>
+                    Ex. Labour practices, Environmental issues, Marketing tactics, Health concerns, Cultural impact:<br></b></li>
+                    <ul><li>Being open-source, it's not managed in the slightest. Whatever is made is made by random people, usually at no benefit to themselves.
+                    Thus, it's prone to bugs and viruses. In fact, very recently, a trojan was almost implemented across two very core Linux distributions; Debian and
+                    RHEL (Red Hat Enterprise Linux). Debian is a fairly popular Linux distro for consumer use, and RHEL is a paid distribution used in governmental
+                    services that require upmost secrecy. The attack was on a package manager called XZ, where they discretely rewrote the code of a backdoor called systemd,
+                    which gave the user full access to the system if verified. The trojan rewrote the verification code when booting the OS, allowing a backdoor to be
+                    accessed, and giving anyone who knew the backdoor access to the entire system. Government files, people's personal data, even important systems like entire
+                    <b>power grids</b> were under threat. Though the trojan was caught before it was put onto the OS.<br></li></ul>
+                    <li><b>Based on your research, what do you think the brand actually represents?<br></b></li><br>
+                    <ul><li>I think it's true to it's word. It's the most used OS in all tech in the world; there's no need to paint their OS as 'better' or something,
+                    all they need to do is let the community code their masterpieces.</li></ul>
+                </ol>
+                <i>Sources: <a href='https://en.wikipedia.org/wiki/Linux#'>Wikipedia</a>, <a href='https://www.linuxfoundation.org/about'>Linux Foundation`
+            },
+            {
+                cardId: 'redesign',
+                title: 'Logo Redesign',
+                subtitle: `It's the logo redesign. What else would it be?`,
+                banner: true,
+                detail: `<h3>I already finished this without doing the <a data-open-card='editedlogo:companyresearch'>Company Resarch</a>, soo...</h3>
+                Here's the image:<br>
+                <br>
+                <img src='images/archbtw.png'><br><br>
+                <h2>Explanation:</h2>
+                I need something more than just "here's the image" for this section, so here I did my best to reverse-engineer my design choices.
+                <h3>Microslop:</h3>
+                Given Microsoft's propensity for overexaggerating stuff no matter how bad it is, this term fits. Appending "slop" to something means it's
+                something low-quality that is repeatedly given, demanded, or forced. <br>For example, games like Lethal Company and REPO are called 'friendslop'
+                as they maximize your experience with friends all the time. Playing these games without friends can be boring and even harder than with. Thus
+                you only really play these games when with friends, meaning it repeatedly demands and/or gives friend experiences.<br>
+                This fits Windows perfectly. It forces you to use their features no matter how low-quality they may be. Thus, Microslop was born.
+                <h3>Arch btw:</h3>
+                Linux isn't really a defined 'company'. It's more of a utility. Thus, the thing that defines Linux is not the company, but the community who make
+                the distributions.<br>
+                A meme in the community is "I use Arch btw". Arch is a distribution of Linux mainly for people with coding expertise (much more coding expertise than me!).
+                Arch is the peak of customization; it will let you do whatever you want to it with little warning. In fact, the first time I tried Linux, it was on Arch.
+                Specifically a desktop environment called 'CaelestiaOS'. It was a very pretty OS with an automatic tiler called Hyprland that improves workflow. After several
+                issues involving the OS thinking my PC was a laptop (showing a battery icon, showing a 'No Wifi' icon when connected via ethernet, etc.), so I switched
+                to a much more user-friendly os called KDE Neon. Like all Linux distributions, it's good for coders and developers. It's also one of the best consumer distributions
+                out there, behind Ubuntu. It's had it's fair share of issues (GRUB boot manager not working, OBS <i>literally DELETING my GPU</i> (not joking here! Ask me about it!),
+                and some other various issues), but it's worked very well in most games and programs.<br>
+                Back to Arch, a big meme in the community is that, given how experienced of a coder you have to be to use it effectively, you have to be really smart to be able to
+                use it. So using Arch is somewhat of a flex, like "Hey! I can do this really hard thing!". This caused many Arch users to mention that they use Arch even when it's
+                not a point in the conversation. Thus, 'I use Arch btw' was born.`
             }
         ]
     },
