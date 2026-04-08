@@ -8,6 +8,7 @@ const version = '0.4.15-CH.0.7';
 
 //Recent changes
 const changeLog = [
+    { date: "04/08/26", text: "Added the <a data-open-card='honeylogo'>Honey Logo</a> section (INCOMPLETE)"},
     { date: "03/25/26", text: "Updated the 'Hobbies' list in <a data-open-card='autobio' style='color: var(--accentch)'>Autobiography</a>"},
     { date: "03/25/26", text: "Added the <a data-open-card='editedlogo' style='color: var(--accentch)'>Satirical Logo design</a> section"},
     { date: "03/18/26", text: "Fixed an issue with a missing image (font.png) at <a data-open-card='fontsandtypefaces:font' style='color: var(--accentch)'>Font notes</a>"},
@@ -23,7 +24,7 @@ const changeLog = [
     { date: "02/26/26", text: "Fixed setting bug caused by an Outsider List" }
 ];
 
-const plannedChanges = `Awaiting further instructions`;
+const plannedChanges = `Completing the Honey Logo section`;
 
 
 
@@ -832,6 +833,9 @@ let menuItems = [
             },
             {
                 linkId: 'editedlogo'
+            },
+            {
+                linkId: 'honeylogo'
             }
         ]
     },
@@ -1230,6 +1234,81 @@ let menuItems = [
                 Back to Arch, a big meme in the community is that, given how experienced of a coder you have to be to use it effectively, you have to be really smart to be able to
                 use it. So using Arch is somewhat of a flex, like "Hey! I can do this really hard thing!". This caused many Arch users to mention that they use Arch even when it's
                 not a point in the conversation. Thus, 'I use Arch btw' was born.`
+            }
+        ]
+    },
+
+    {
+        menuId: 'honeylogo',
+        title: `Honey, I'm home!`,
+        subtitle: 'No, I did not pick this title.',
+        image: 'images/honeylogo.png',
+        hidden: true,
+        labels: [
+            {
+                cardId: 'planning',
+                title: 'Planning',
+                subtitle: 'The planning? What else?',
+                banner: true,
+                detail: `<h3>The planning</h3>
+                I had an idea from the start. That start being on the very last day before Spring break, halfway through the class, but a damn good idea nonetheless.<br><br>
+                You ever see those no-name brands in stores? The ones that are a weird  yellow and with basic text on it? I want that kind of style.<br>
+                And you know how honey supposedly doesn't go bad?<br>
+                <br>
+                What better place for something that tastes good, is (relatively) cheap, and lasts literally forever, than<br>
+                <h4>a bunker!</h4>
+                So my design will be for a Ration jar of honey. Something you'd see in an MRE or, like I said, a bunker.
+
+                <ol>
+                    <li>Company name: Stuff That'll Last</li>
+                    <li>Logo:<br>
+                        <img src='images/honeylogo.png' width=100 style="margin-right:1000px;"><br></li>
+                    <li>Type of honey: Natural</li>
+                    <li>Volume: 12 fl oz</li>
+                    <li>Ingredients list: Natural honey, Acidity regulator (INS 260) <-- A real preservative!</li>
+                    <li>Best before: 04/08/2076 (50 years from now (only a best before, not an expiry date))</li>
+                    <li>Slogan: Stuff That'll Last</li>
+                    <li>Barcode: Translates to STL-Honey<br><br>
+                        <img src='images/honeybarcode.png' width=300 style="margin-right:1000px;"><br></li>
+                    <li>Design elements:<br>
+                        <ul>
+                            <li>Space</li>
+                            <li>Unity</li>
+                            <li>Balance</li>
+                        </ul>
+                    </li>
+                </ol><br>
+                <br>
+                <b>Finished Label:<br><br></b>
+                <img src='images/honeylabel.png' width=900>`     
+            },
+            {
+                cardId: 'backstory',
+                title: 'Company Backstory',
+                subtitle: `My fictional company's fictional backstory`,
+                banner: true,
+                detail: `<h3>Backstory</h3>
+                <h4>Company origins:</h4>
+                <ol>
+                    <li>Founded by: me</li>
+                    <li>Located: here</li>
+                    <li>Details:<br><br>
+                        <ul>
+                            <li>Began in 2018 as a school project, making durable grocery bags</li>
+                            <li>Grew enough to give a good and stable living</li>
+                            <li>Stayed in school, but company still grew</li>
+                            <li>Dropped out in 2024 to continue the buisness</li>
+                            <li>Started branching out to other lasting products, like lightbulbs and eventually honey</li>
+                        </ul><br>
+                        <ol>
+                            <li>Mission and values: Make the longest lasting things possible</li>
+                            <li>Target market: People who would rather keep for an extra buck than replace for the sticker price.
+                            Also for people who plan on staying away from society for a long period of time (like Military or doomsday preppers)</li>
+                            <li>Unique selling point: Stuff That'll Last takes companies' biggest worry and throws it out the window, likely to their own detriment. They
+                            make things that last, so people who buy once never buy again. Bad in the long run, unlike all our products!</li>
+                        </ol>
+                    </li>
+                </ol>`
             }
         ]
     },
