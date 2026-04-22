@@ -3,12 +3,14 @@
     -------------------------- */
 
 // Metadata
-const version = '0.4.15-CH.0.7';
+const version = '0.4.15-CH.0.9';
 
 
 //Recent changes
 const changeLog = [
-    { date: "04/08/26", text: "Added the <a data-open-card='honeylogo'>Honey Logo</a> section (INCOMPLETE)"},
+    { date: "04/22/26", text: "Finished the <a data-open-card='jobresearch' style='color: var(--accentch)'>Job research</a> project"},
+    { date: "04/22/26", text: "Finished the <a data-open-card='honeylogo' style='color: var(--accentch)'>Honey Logo</a> section"},
+    { date: "04/08/26", text: "Added the <a data-open-card='honeylogo' style='color: var(--accentch)'>Honey Logo</a> section (INCOMPLETE)"},
     { date: "03/25/26", text: "Updated the 'Hobbies' list in <a data-open-card='autobio' style='color: var(--accentch)'>Autobiography</a>"},
     { date: "03/25/26", text: "Added the <a data-open-card='editedlogo' style='color: var(--accentch)'>Satirical Logo design</a> section"},
     { date: "03/18/26", text: "Fixed an issue with a missing image (font.png) at <a data-open-card='fontsandtypefaces:font' style='color: var(--accentch)'>Font notes</a>"},
@@ -836,6 +838,9 @@ let menuItems = [
             },
             {
                 linkId: 'honeylogo'
+            },
+            {
+                linkId: 'jobresearch'
             }
         ]
     },
@@ -1280,7 +1285,14 @@ let menuItems = [
                 </ol><br>
                 <br>
                 <b>Finished Label:<br><br></b>
-                <img src='images/honeylabel.png' width=900>`     
+                <img src='images/honeylabel.png' width=900><br><br>
+                Turns out, I made the text way too small, and didn't use nearly the right amount of space provided. 
+                The buffer at the right? It was for where the glue would be applied. The small text? I thought this label would be much bigger. 
+                12 ounces? This tiny container (according to my calculations) could fit at most 7! (well that's actually not that bad, but still).
+                <br>
+                <br>
+                Here's what I mean:<br>
+                <img src='images/honeybottle.png'>`     
             },
             {
                 cardId: 'backstory',
@@ -1309,6 +1321,166 @@ let menuItems = [
                         </ol>
                     </li>
                 </ol>`
+            }
+        ]
+    },
+
+
+    {
+        title: 'Jobs',
+        subtitle: 'Ya think I can get one in this economy?',
+        menuId: 'jobresearch',
+        image: 'images/college.png',
+        hidden: true,
+        labels: [
+            {
+                cardId: 'decision',
+                title: 'What job',
+                subtitle: 'should I research?',
+                detail: `<h3>I have no idea.</h3>
+                I've never been artistically gifted. I'm good with straight line stuffs, but that's pretty much it. And I already have a career path; digital forensics.<br>
+                <br>
+                Looking at the provided examples helps a lot, though; the coder would be amazing at coding, so designing an app should be a piece of cake. In fact, <b>I've already
+                made an app!</b><br><br>
+                <img src='images/ssfm.png'>
+                <br>
+                This is a Finance manager for a game I like, Signal Simulator. It does many things, like saves your upgrades' progress, shows how much you need to max the upgrade,
+                and shows you how far you have fully upgraded everything.<br><br>
+                <b><a href='https://github.com/Syrupyt/SignalSimFinanceManager/tree/main'>Github repository</a> (includes a<a data-open-card='readme'> Readme</a>)<b>`
+            },
+            {
+                cardId: 'research',
+                title: 'Research',
+                subtitle: 'yeah',
+                detail: `<h3>What is app design?</h3>
+                More specifically, what are the answers to the specific questions you've given me?<br>
+                <ol>
+                    <li>Career Description:
+                        <ul>
+                            <li>What does this specific type of designer do?<br>
+                            <ul><li>"a creative professional who specialises in designing the user interfaces 
+                            (UI) and user experiences (UX) of mobile applications"<br>
+                            <i><a href='https://www.creativerecruiters.com.au/design-and-creative-talent/app-designer?source=google.com'>Source</a></i></li></ul></li><br>
+                            <li>What kinds of projects do they create?<br>
+                            <ul><li>Visually appealing app designs</li></ul></li>
+                        </ul>
+                    <br></li>
+                    <li>Day-to-day work:
+                        <ul>
+                            <li>What tasks do they do regularly?<br>
+                            <ul><li>Uses software like Sketch, Adobe XD, Figma, etc. to design apps</li></ul></li><br>
+                            <li>Who do they work with?<br>
+                            <ul><li>App developers</li></ul></li>
+                        </ul>
+                    <br></li>
+                    <li>Skills needed:
+                        <ul>
+                            <li>List at least 5:
+                                <ul>
+                                    <li>Bachelors in graphic design, interaction design, ui/ux design or other related field</li>
+                                    <li>Internships allowed for no experience</li>
+                                    <li>Junior roles allowed for little experience</li>
+                                    <li>Intermediate and above requires multiple years</li>
+                                    <li>Strong design skills</li>
+                                </ul>
+                            </li><br>
+                            <li>Explain your answers:
+                                <ul><li>Many sourced from <a href='https://www.creativerecruiters.com.au/design-and-creative-talent/app-designer?source=google.com'>
+                                this website</a></li></ul>
+                            </li>
+                        </ul>
+                    <br></li>
+                    <li>Education:
+                        <ul>
+                            <li>What training or education is needed?<br>
+                            <ul><li>Bachelors in graphic design, interaction design, ui/ux design or other related field</li></ul></li><br>
+                            <li>Are there alternative paths (self-taught, online, etc.)?<br>
+                            <ul><li><a href='https://skillcrush.com/tech-jobs/mobile-app-designer/'>Some sources</a> say a bachelors is not required</li></ul></li>
+                        </ul>
+                    <br></li>
+                    <li>Tools and technology:
+                        <ul>
+                            <li>What software or tools are used?<br>
+                            <ul><li>Sketch, Adobe XD, Figma, InVision, Zeplin</li></ul></li>
+                        </ul>
+                    <br></li>
+                    <li>Salary outlook:
+                        <ul>
+                            <li>What do people in this job typically earn?<br>
+                            <ul><li>~$110,000/year (<a href='https://skillcrush.com/tech-jobs/mobile-app-designer/'>Source</a>)</li></ul></li><br>
+                            <li>Is demand growing?<br>
+                            <ul><li>Yes; 23% predicted from 2020-2030</li></ul></li>
+                        </ul>
+                    <br></li>
+                    <li>Work environment:
+                        <ul>
+                            <li>Where do they work? (office, home, freelance, etc.)<br>
+                            <ul><li>Depends, likely office</li></ul></li>
+                        </ul>
+                    </li>
+                </ol>`
+            },
+            {
+                title: 'Reflection',
+                cardId: 'reflection',
+                subtitle: 'ts not for me',
+                detail: `<h3>Yeah, this aint for me.</h3>
+                I thought this job would include some coding, since the design of an app highly depends on the code instead of the design, but as far as I can tell,
+                very little coding is involved with this career. <br>
+                I would not pick this job as a career for many reasons; <br>
+                for one, no code. That's obvious.<br>
+                Another reason; the career path I already have in mind (digital forensics) pays more (80-130k, depending on education and experience)<br>
+                I didn't really get surprised by a lot, though. It seemed like it might involve coding, but I would be surprised if it did. I just picked it, as it
+                was the closest thing there was to something that might involve some form of coding.`
+            }
+        ]
+    },
+
+    {
+        menuId: 'readme',
+        hidden: true,
+        labels: [
+            {
+                cardId: 'readme',
+                detail: `<h3>this is pretty much a one-to-one copy of the readme on the <a href='https://github.com/Syrupyt/SignalSimFinanceManager/tree/main'>Github repository</a>.
+                Nothing new here.</h3>
+
+                <h3>SignalSimFinanceManager</h3>
+                A manager program that takes in all purchased Upgrades and calculates three things: credits needed to unlock the rest, credits already spent, and percent complete.
+                <h4>Saving:</h4>
+                Saves to a savedata.json in the directory you put the executable in.<br>
+
+                ⚠️ WARNING: IF MOVING EITHER OF THESE FILES, MOVE THEM TOGETHER. OTHERWISE A NEW SAVE FILE WILL BE CREATED, AND IT'LL BE SET TO ZERO<br>
+
+                The best thing about this? It doesn't use your personal files: on Linux, it's usually ~/.local/share or ~/.config. On Windows, it's usually in Appdata or Documents. 
+                This program doesn't do that. The only files affected is the folder you run the program in. So the only uninstall steps? Just delete the executable, and the json.
+                <br>
+                Do note, I haven't tested shortcuts, and they may break due to my use of os.path. Though try it out and see.
+                <h4>Features:</h4>
+                Upgrade details; click on any of the icons and see a (fairly) detailed explanation of the upgrade and what it does. If there's anything off about my data, 
+                go ahead and make an Issues ticket on this repository. Though don't expect it to be updated quickly, I aint switching operating systems and running pyinstaller 
+                every time I make a mistake on a non-essential part of the program.<br>
+
+                Saving; Obviously, can save. Saves to a very easily interpretable savedata.json file which is literally just a list of the modules with the numbers. 
+                Literally nothing else. Reset; Reset button does what it says; when you click it (with a warning), it zeros out the savedata.json. Deleting said file does 
+                the same thing. Note: Closing the program does not automatically save, nor lets you know that it hasn't been saved. Be careful when closing.<br>
+
+                Finance calculation; My favourite. It calculates not just the cost to advance the current tier, but calculates the cost it would take to get all the way 
+                to the max tier. While I could code a way to see the remaining cost of each module separately when clicked, but I'm too lazy to do that. Though, who knows, 
+                maybe I'll get interested again. Shows total, total spent, total needed to complete, and percent completed. Live updates.<br>
+                <i>Apparently I already have added this!</i><br>
+                <h4>Installation:</h4>
+                Windows: Download SigSimFinanceManager{version}-win.exe. Put it in any directory you choose. Run it like any other .exe<br>
+                Linux: Download SigSimFinanceManager{version}-lin. Put it in any directory you choose. Run it like any other executable 
+                (may need to do the command 'chmod +x path/to/your/dir/SigSimFinanceManager{version}-lin')
+                <h4>For developers:</h4>
+                If you wish to modify this in any way, simply download the directory as a zip. Everything you're interested in should be in pyfiles. 
+                Visual Studio Code recommended, but you choose your seasoning. Also, make sure whatever you're using is in the directory of the python file. 
+                Otherwise it'll fail. I'll allow any branch requests (if I can figure out how, github is freaky).<br>
+                Further note: The python file will NOT create the json on it's own when it is not compiled with pyinstaller. Must manually create it to test it.<br>
+                Needed packages (most are pre-installed): -tkinter -os -sys -json -shutil -pyinstaller (only for compiling)<br>
+                Also, sorry for the severe lack of comments in my code!`
+
             }
         ]
     },
