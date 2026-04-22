@@ -26,7 +26,7 @@ const changeLog = [
     { date: "02/26/26", text: "Fixed setting bug caused by an Outsider List" }
 ];
 
-const plannedChanges = `Completing the Honey Logo section`;
+const plannedChanges = `Completing the Not Just A Logo project`;
 
 
 
