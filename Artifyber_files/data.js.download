@@ -3,11 +3,13 @@
     -------------------------- */
 
 // Metadata
-const version = '0.4.15-CH.0.9';
+const version = '0.4.15-CH.0.91';
 
 
 //Recent changes
 const changeLog = [
+    { date: "04/29/26", text: "Added more splashtexts, including a Tarot pull that includes every tarot card. Google what they mean if you'd like to know."},
+    { date: "04/29/26", text: "Finished the <a data-open-card='logotwo' style='color: var(--accentch)'>Second logo</a> project"},
     { date: "04/22/26", text: "Finished the <a data-open-card='jobresearch' style='color: var(--accentch)'>Job research</a> project"},
     { date: "04/22/26", text: "Finished the <a data-open-card='honeylogo' style='color: var(--accentch)'>Honey Logo</a> section"},
     { date: "04/08/26", text: "Added the <a data-open-card='honeylogo' style='color: var(--accentch)'>Honey Logo</a> section (INCOMPLETE)"},
@@ -26,7 +28,7 @@ const changeLog = [
     { date: "02/26/26", text: "Fixed setting bug caused by an Outsider List" }
 ];
 
-const plannedChanges = `Completing the Not Just A Logo project`;
+const plannedChanges = `Completing the Honey Logo section`;
 
 
 
@@ -841,6 +843,9 @@ let menuItems = [
             },
             {
                 linkId: 'jobresearch'
+            },
+            {
+                linkId: 'logotwo'
             }
         ]
     },
@@ -1481,6 +1486,61 @@ let menuItems = [
                 Needed packages (most are pre-installed): -tkinter -os -sys -json -shutil -pyinstaller (only for compiling)<br>
                 Also, sorry for the severe lack of comments in my code!`
 
+            }
+        ]
+    },
+
+
+    {
+        //Logo
+        title: 'Logo 2',
+        subtitle: `idk why we're doing this again`,
+        menuId: 'logotwo',
+        image: 'images/tringal_finished.png', 
+        hidden: true,
+        labels: [
+            {
+                title: 'What to do',
+                subtitle: 'I thought I already did it!',
+                cardId: 'whattodo',
+                detail: `<h3>I thought the <a data-open-card='editedlogo'>Satirical logo design</a> was what was going on the shirt</h3>
+                I thought the shirts would have it pre-printed, not that we had to add the prints. Though <i>this</i> wouldn't go horriffically amazing on a shirt:<br><br>
+                <img src='images/archbtw.png'><br>
+                <br>
+                Anyways, since this wasn't what was going on the shirt, I had to make another logo.<br>
+                First Idea I had was to do exactly what I thought was going on it; the image above. Though the restriction of 3 colors max sailed that idea just from the 4-colored
+                Windows logo.<br>
+                <h4>Next idea was a lot better.</h4>
+                Since there were three colors, I, the giant nerd that I am, thought to use RGB (
+                    <b style="color:var(--color-4)">Red</b>, 
+                    <b style="color:var(--color-5)">Green</b>, and
+                    <b style="color:var(--color-2)">Blue</b>, 
+                    the colors you're currently seeing on your screen, additively mixing to make any color)<br>
+                The next thing I needed was the thing; what shape has 3 sides, and is cool? A triangle! Specifically, a <a data-open-card='sierpinski'>Sierpinski triangle.</a><br>
+                Sierpinski triangles are infinite and cannot be made in reality. So I only did four layers down;<br>
+                <img src='images/tringal_white.png'><br>
+                <br>
+                Eventually, I had three offset sierpinski triangles, one red, one green, and one blue.<br>
+                <img src='images/tringal_color.png'><br>
+                <br>
+                After a horrible fail of trying to combine them:<br>
+                <img src='images/tringal_fail.png'><br>
+                <br>
+                I found a feature of Paint.net and it's layers; additive layer mixing. Every point at which the triangles intersected had cyan, yellow, magenta, etc.<br>
+                <img src='images/tringal_add.png'><br>
+                <br>
+                After that discovery, I had a think; I can't use the added colors because I can only use 3, and it wouldn't even be my original RGB if I did CYM. What I could do is remove from the original,
+                so that's what I did. Every triangle that was intersecting another was deleted, and every point at which the triangle was just one color was put onto the final product.
+                After a while of tinkering with paint.net and it's iffy free select, I eventually had this masterpiece:<br>
+                <img src='images/tringal_finished.png'><br>
+                <br>
+                Even more reason to love math. I just messed around and found some beautiful symetry; combining the three non-intersecting colors left the triangle entirely filled! That's not planning,
+                nor is it luck (stuff like this happens WAY too much for it to be luck alone). All it is is the beautiful symmetry that is everywhere in math. If you mess around with something enough, you can
+                find symmetry.<br>
+                <br>
+                <br>
+                <br>
+                I'm thinking (if you allow it), I could have a 30cm x 30cm design of it on the back, and a small 10x10 design on the pocket part in the front.`
             }
         ]
     },
