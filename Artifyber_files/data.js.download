@@ -3,11 +3,12 @@
     -------------------------- */
 
 // Metadata
-const version = '0.4.15-CH.0.91';
+const version = '0.4.15-CH.0.92';
 
 
 //Recent changes
 const changeLog = [
+    { date: "05/07/26", text: "Completed the <a data-open-card='alien' style='color: var(--accentch)'>Magazine cover</a> project"},
     { date: "04/29/26", text: "Added more splashtexts, including a Tarot pull that includes every tarot card. Google what they mean if you'd like to know."},
     { date: "04/29/26", text: "Finished the <a data-open-card='logotwo' style='color: var(--accentch)'>Second logo</a> project"},
     { date: "04/22/26", text: "Finished the <a data-open-card='jobresearch' style='color: var(--accentch)'>Job research</a> project"},
@@ -846,6 +847,9 @@ let menuItems = [
             },
             {
                 linkId: 'logotwo'
+            },
+            {
+                linkId: 'alien'
             }
         ]
     },
@@ -1297,6 +1301,7 @@ let menuItems = [
                 <br>
                 <br>
                 Here's what I mean:<br>
+                <h3>UNDER CONSTRUCTION PHOTO</h3>
                 <img src='images/honeybottle.png'>`     
             },
             {
@@ -1541,6 +1546,76 @@ let menuItems = [
                 <br>
                 <br>
                 I'm thinking (if you allow it), I could have a 30cm x 30cm design of it on the back, and a small 10x10 design on the pocket part in the front.`
+            }
+        ]
+    },
+
+    {
+        menuId: 'alien',
+        title: 'Magazine cover',
+        subtitle: 'gleep glorp',
+        image: 'images/thumbnails/alien.png',
+        hidden: true,
+        labels: [
+            {
+                cardId: 'planning',
+                title: 'Planning',
+                subtitle: 'gleeple bing<br><br><i>Translated to: <br>I got lucky</i>',
+                detail: `<h3>The topics I got on the wheel were insane.</h3>
+                Here's a list of all the options:<br>
+                <br>
+                <img src='images/listofoptions.png'><br>
+                <br>
+                And guess what two I got?<br>
+                <br>
+                Aliens...<br>
+                <br>
+                <br>
+                And indie.
+                <br><br><br>
+                Two of my most favourite genres (well, not aliens, but they're easily memeable). And I got them.<br>
+                Imagine if I got something like Barbie and Bodybuilding. That would just suck.<br>
+                But, I got lucky, so I went straight to the rough drafts.`
+            },
+            {
+                cardId: 'roughdraft',
+                title: 'Rough draft',
+                subtitle: 'The Fever Dream',
+                detail: `<h3>I have no words.</h3><br>
+                <img src='images/alienroughdraft.png'><br>
+                <br>
+                I made this in under 5 minutes. And that was 5 minutes I barely remember.<br>
+                I was thinking along the lines of 'what to do if you're the first contact', because if some random bloke is the first contact, an invasion
+                could be caused by even the smallest ill reaction.<br><br.
+                And then this masterpiece was made.`
+            },
+            {
+                cardId: 'final',
+                title: 'Finished project',
+                subtitle: 'ouiouauoyaiyoaiioaiy',
+                detail: `<h3> After another fever dream, this time about 30 minutes, I had this absolute peak.</h3><br>
+                <img src='images/finishedalien.png'><br>
+                <br>
+                Believe it or not, but this actually has lore.<br>
+                <br>
+                The lore is about the price sticker. Notice anything?<br>
+                It doesn't end in the classic '.99'. Why is that?<br>
+                <br>
+                Now, I must take you to the regular land of Costco.<br>
+                Their prices have hidden meanings that you wouldn't expect.
+                <ul>
+                    <li>Prices ending in .99 are regular price</li>
+                    <li>Prices ending in .97 are from corporate, and means that it's the last few in stock and are significantly marked down to clear inventory.</li>
+                    <li>If it ends in .49, .79, or .89, it's a discount made by the Manufacturer.</li>
+                    <li>If it has an asterisk, it's never going to be restocked. Often called 'The Death Star'</li>
+                    <li>And most importantly, if it ends in .00 or .88, then it's a Manager special. This means the manager wants this off the shelves, and likely won't be
+                    restocked. Means a significant sale.</li>
+                </ul>
+                <br>
+                Now, if you notice the price on my magazine, it ends in '.00', and has an Asterisk. This means the manager simply wants it off his shelves, as if it's so bad 
+                that they'd rather lower profits simply to get rid of it. Perfect for indie!<br>
+                Furthermore, sometimes the rare '.00' can mean that it was returned, meaning that someone might have bought it and hated it so much that they returned it.<br>
+                Again, perfect for indie!`
             }
         ]
     },
