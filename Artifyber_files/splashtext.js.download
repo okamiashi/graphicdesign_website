@@ -58,7 +58,7 @@ splashLines = [
     "You <i>do</i> know there are settings, right?",
     "Click the play button in the corner to play background music!",
     `Tarot card of the day: ${tarotCards[Math.floor(Math.random() * tarotCards.length)]}`,
-    `Tarot card of the day: ${tarotSuits[Math.floor(Math.random() * tarotSuits.length)]} of ${tarotNumbers[Math.floor(Math.random() * tarotNumbers.length)]}`,
+    `Tarot card of the day: ${tarotNumbers[Math.floor(Math.random() * tarotNumbers.length)]} of ${tarotSuits[Math.floor(Math.random() * tarotSuits.length)]}`,
     "This is not a virus. Or is it?<br>(moon men starts playing)",
     "32GB of ram for only an arm and <i>two</i> legs instead of the usual three!",
     "what do capacitors taste like",
