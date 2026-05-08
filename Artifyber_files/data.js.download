@@ -3,11 +3,12 @@
     -------------------------- */
 
 // Metadata
-const version = '0.4.15-CH.0.92';
+const version = '0.4.15-CH.0.92.1';
 
 
 //Recent changes
 const changeLog = [
+    { date: "05/08/26", text: "Retrieved The Jar, allowing for the full completion of the <a data-open-card='honeylogo' style='color: var(--accentch)'>Honey Logo</a> project."},
     { date: "05/07/26", text: "Completed the <a data-open-card='alien' style='color: var(--accentch)'>Magazine cover</a> project"},
     { date: "04/29/26", text: "Added more splashtexts, including a Tarot pull that includes every tarot card. Google what they mean if you'd like to know."},
     { date: "04/29/26", text: "Finished the <a data-open-card='logotwo' style='color: var(--accentch)'>Second logo</a> project"},
@@ -29,7 +30,7 @@ const changeLog = [
     { date: "02/26/26", text: "Fixed setting bug caused by an Outsider List" }
 ];
 
-const plannedChanges = `Completing the Honey Logo section`;
+const plannedChanges = `Waiting for a project to be assigned`;
 
 
 
@@ -1301,7 +1302,6 @@ let menuItems = [
                 <br>
                 <br>
                 Here's what I mean:<br>
-                <h3>UNDER CONSTRUCTION PHOTO</h3>
                 <img src='images/honeybottle.png'>`     
             },
             {
