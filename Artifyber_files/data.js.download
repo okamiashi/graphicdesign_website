@@ -8,6 +8,7 @@ const version = '0.4.15-CH.0.92.1';
 
 //Recent changes
 const changeLog = [
+    { date: "05/11/26", text: "Made some bugfixes, mainly including missing images, such as the image of the app in <a data-open-card='decision' style='color: var(--accentch)'>Job Research</a> project, the cover image of the <a data-open-card='projects' style='color: var(--accentch)'>Magazine cover project</a>, etc."},
     { date: "05/08/26", text: "Added another image to the <a data-open-card='honeylogo' style='color: var(--accentch)'>Honey Logo</a> project."},
     { date: "05/08/26", text: "Retrieved The Jar, allowing for the full completion of the <a data-open-card='honeylogo' style='color: var(--accentch)'>Honey Logo</a> project."},
     { date: "05/07/26", text: "Completed the <a data-open-card='alien' style='color: var(--accentch)'>Magazine cover</a> project"},
@@ -882,7 +883,7 @@ let menuItems = [
                 <h3>Some examples of my (horrible) work:</h3><br>
                 <img src='images/sy.gif' height=250px><br>
                 The original gif:<br>
-                <img src=images/sy_original.gif height=150px><br>
+                <img src='images/sy_original.gif' height=150px><br>
                 pretty much all I did was make it blue and got rid of the yellow background. I did it to get an animated pfp, also because this fits
                 one of my characters *very* well (named Obake, a shapeshifter character). I got it from a video animation from <a href='https://www.tiktok.com/@znackish'>Znackish</a>.<br>
                 <br>
